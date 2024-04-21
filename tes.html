@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/ionicons.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/order.css" />
     <style></style>
   </head>
   <body>
@@ -30,21 +31,103 @@
       </div>
     </nav>
 
-    <div id="caraOrder" class="container">
-        <h2>Cara Order</h2>
-        <ol>
-            <li>Pilih jenis joki yang Anda butuhkan, apakah itu untuk game atau tugas tertentu.</li>
-            <li>Lengkapi formulir pemesanan dengan detail yang dibutuhkan, seperti jenis game atau tugas, level, dan instruksi khusus jika ada.</li>
-            <li>Kirimkan formulir pemesanan tersebut melalui tombol 'Pesan Sekarang' atau cara yang tersedia di situs kami.</li>
-            <li>Tunggu konfirmasi dari tim kami melalui email atau pesan teks, yang akan berisi estimasi waktu penyelesaian dan rincian pembayaran.</li>
-            <li>Setelah konfirmasi diterima, lakukan pembayaran sesuai dengan instruksi yang diberikan.</li>
-            <li>Setelah pembayaran berhasil diverifikasi, joki game atau tugas Anda akan segera dimulai.</li>
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div>
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#carousel" data-slide-to="0"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
           </ol>
+        </div>
 
-        <h2>Cara Bayar</h2>
-        <p>Setelah langkah-langkah ini dilakukan, Anda akan menerima konfirmasi pesanan melalui email atau pesan teks.</p>
+    <div id="caraOrder" class="carousel-item active">
+        <img src="image/slider/1_batik.jpg" class="d-block w-100" alt="Cara Order">
+        <div class="carousel-caption d-none d-md-block">
+          <div class="row">
+            <div class="col-12 col-md-6 ml-auto">
+              <div class="card text-left border-0">
+                <div class="card-body">
+                  <h4 class="card-title">Cara Order</h4>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, accusantium.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       
+      <div id="caraPembayaran" class="carousel-item">
+        <img src="image/slider/2_payment.jpg" class="d-block w-100" alt="Cara Pembayaran">
+        <div class="carousel-caption d-none d-md-block">
+          <div class="row">
+            <div class="col-12 col-md-6 ml-auto">
+              <div class="card text-left border-0">
+                <div class="card-body">
+                  <h4 class="card-title">Cara Pembayaran</h4>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, accusantium.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <div id="caraOrder" class="container">
+      <h2>Cara Order</h2>
+      <ol>
+        <li>Pilih jenis joki yang Anda inginkan</li>
+        <li>
+          Lengkapi formulir pemesanan dengan detail yang dibutuhkan, seperti
+          jenis game atau tugas, dan instruksi khusus jika ada.
+        </li>
+        <li>
+          Kirimkan formulir pemesanan tersebut melalui tombol 'Pesan Sekarang'
+          atau cara yang tersedia di situs kami.
+        </li>
+        <li>
+          Tunggu konfirmasi dari tim kami melalui email atau pesan teks, yang
+          akan berisi estimasi waktu penyelesaian dan rincian pembayaran.
+        </li>
+        <li>
+          Setelah konfirmasi diterima, lakukan pembayaran sesuai dengan
+          instruksi yang diberikan.
+        </li>
+        <li>
+          Setelah pembayaran berhasil diverifikasi, joki game atau tugas Anda
+          akan segera dimulai.
+        </li>
+      </ol>
+      <p>
+        Setelah langkah-langkah ini dilakukan, Anda akan menerima konfirmasi
+        pesanan melalui email atau pesan teks.
+      </p>
+    </div>
+
+    <div id="caraBayar" class="container">
+      <h2>Cara Bayar</h2>
+      <p>Kami menyediakan beberapa opsi pembayaran yang mudah dan aman:</p>
+      <ol>
+        <li>
+          <strong>Transfer Bank:</strong> Lakukan transfer bank ke rekening yang
+          telah disediakan. Pastikan untuk mencantumkan nomor pesanan Anda
+          sebagai referensi pembayaran.
+        </li>
+        <li>
+          <strong>Dompet Digital:</strong> Kami juga menerima pembayaran melalui
+          berbagai platform dompet digital yang populer.
+        </li>
+      </ol>
+      <p>
+        Setelah pembayaran Anda berhasil diproses, Anda akan menerima konfirmasi
+        pembayaran melalui email bersama dengan rincian pesanan Anda.
+      </p>
+    </div>
 
     <footer class="container-fluid">
       <div class="row no-gutters">
@@ -118,5 +201,41 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const viewImage = (url) => {
+          $('#imagePreview img')[0].setAttribute('src', url);
+          $('#imagePreview').addClass('active');
+        };
+  
+        const closeImagePreview = () => {
+          $('#imagePreview').removeClass('active');
+        };
+  
+        const setCategory = (category) => {
+          $('.section-3 .row .item').each((index, element) => {
+            console.log(element.getAttribute('data-category'), element);
+  
+            const itemCategory = element.getAttribute('data-category');
+  
+            if (category === '1') {
+              element.classList.remove('d-none');
+            } else {
+              if (itemCategory !== category) {
+                element.classList.add('d-none');
+              } else {
+                element.classList.remove('d-none');
+              }
+            }
+          });
+  
+          $('.section-3 .category .btn').removeClass('active');
+        };
+  
+        $('.section-3 .category .btn').on('click', (e) => {
+          setCategory(e.target.value);
+          e.target.classList.add('active');
+        });
+      </script>
   </body>
 </html>
