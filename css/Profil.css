@@ -1,24 +1,83 @@
-#our-team {
-    text-align: center;
-    background-color: #02353C;
+/* Gaya keseluruhan */
+body {
+    font-family: 'Roboto', sans-serif; /* Font modern */
+    background-color: #0D0D0D; /* Warna latar belakang futuristik */
+    color: #FFFFFF; /* Warna teks */
 }
 
-.container {
+/* Gaya judul */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Gaya kartu tim */
+/* Gaya kartu tim */
+.card {
+    min-width: 15rem; /* Lebar minimum kartu */
+    max-width: calc(100% - 40px); /* Lebar maksimum kartu */
+    margin: 20px;
+    background-color: #1A1A1A;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+    text-align: center; /* Tengahkan teks */
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
 }
 
-.card {
-    width: 14rem;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+
+/* Efek hover */
+.card:hover {
+    transform: scale(1.05);
 }
 
-/* Media query for small screens */
+/* Gaya gambar tim */
+.card img {
+    border-radius: 10px 10px 0 0; /* Membuat sudut gambar membulat di atas */
+    width: 100%;
+    height: auto;
+}
+
+/* Gaya judul tim */
+.card .card-title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Gaya wrapper untuk slide */
+.cards-wrapper {
+    display: flex;
+}
+
+/* Gaya kontrol navigasi */
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.prev-btn,
+.next-btn {
+    background-color: #2E2E2E; /* Warna tombol navigasi */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease; /* Efek transisi */
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #404040; /* Warna tombol navigasi saat hover */
+}
+
+/* Media query untuk layar kecil */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
+    .cards-wrapper {
+        overflow-x: auto;
     }
 }
