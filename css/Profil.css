@@ -27,6 +27,16 @@ h2 {
     margin-bottom: 30px;
 }
 
+#tentang {
+    width: 200px;
+    height: auto;
+}
+
+#sejarah {
+    width: 200px;
+    height: auto;
+}
+
 #our-team h2 {
     margin-bottom: 10px;
 }
@@ -64,6 +74,10 @@ h2 {
     justify-content: center;
 }
 
+.card-body{
+    margin-bottom: 10px;
+}
+
 .card:hover {
     transform: scale(1.05);
 }
@@ -77,6 +91,7 @@ h2 {
 .card .card-title {
     margin-top: 10px;
     font-size: 1.2rem;
+    margin: 0;
 }
 
 .controls {
