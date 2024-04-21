@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JokiSkuy</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style></style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <a href="#" class="navbar-brand">JokiSkuy</a>
+
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navbarCollapse" class="collapse navbar-collapse">
+        <div class="navbar-nav ml-auto">
+          <a href="#carousel" class="nav-link">BERANDA</a>
+          <a href="#profil" class="nav-link">PROFIL</a>
+          <a href="#layanan" class="nav-link">LAYANAN</a>
+          <a href="#caraOrder" class="nav-link">CARA ORDER</a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <div>
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#carousel" data-slide-to="0"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
+        </ol>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image/slider/1_batik.jpg" alt="Batik" />
+          <div class="carousel-caption">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-5 col-xl-5 ml-auto">
+                <div class="card text-left border-0">
+                  <div class="card-body">
+                    <h4 class="card-title">1</h4>
+                    <p class="card-text mb-0">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Cupiditate est ut distinctio nostrum dolore, officia
+                      veniam laboriosam et harum, omnis fugit tenetur minima
+                      illum quae maxime, tempora rem quia! Animi.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="image/slider/2_tea.jpg" alt="Tea" />
+          <div class="carousel-caption">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-5 col-xl-5 ml-auto">
+                <div class="card text-left border-0">
+                  <div class="card-body">
+                    <h4 class="card-title">2</h4>
+                    <p class="card-text mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Libero eum sunt eligendi qui nemo vero, adipisci quod
+                      distinctio cupiditate saepe veritatis maiores a,
+                      repellendus harum? Quos asperiores nisi molestiae in?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#carousel" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#carousel" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <footer class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-xl-3 p-4">
+          <h4 class="navbar-brand">JokiSkuy</h4>
+          <p>JokiSkuy adalah...</p>
+        </div>
+        <div class="col-xl-3 p-4">
+          <div class="title">NAVIGASI</div>
+          <div class="line my-2"></div>
+          <div>
+            <a href="#carousel">BERANDA</a>
+          </div>
+          <div>
+            <a href="#profil">PROFIL</a>
+          </div>
+          <div>
+            <a href="#layanan">LAYANAN</a>
+          </div>
+          <div>
+            <a href="#caraOrder">CARA ORDER</a>
+          </div>
+        </div>
+        <div class="col-xl-3 p-4">
+          <div class="title">HUBUNGI KAMI</div>
+          <div class="line my-2"></div>
+          <p class="mb-1">JokiSkuy</p>
+          <p class="mb-1">Indonesia</p>
+          <p class="mb-1">
+            <span class="font-weight-bold">Telp :</span> JokiSkuy
+          </p>
+          <p class="mb-2">
+            <span class="font-weight-bold">Email :</span> JokiSkuy
+          </p>
+          <div>
+            <a href="#">
+              <i class="mx-2 ion-social-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="mx-2 ion-social-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="mx-2 ion-social-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="mx-2 ion-social-googleplus"></i>
+            </a>
+            <a href="#">
+              <i class="mx-2 ion-social-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 p-4">
+          <div class="title">INFO KAMI</div>
+          <div class="line my-2"></div>
+          <p>
+            Silahkan masukkan alamat email anda untuk berlangganan informasi
+            dari kami. Anda dapat berhenti sewaktu waktu
+          </p>
+          <div class="form-group row no-gutters">
+            <div class="col-8">
+              <input class="form-control rounded-0" type="text" />
+            </div>
+            <div class="col-4">
+              <button class="btn submit rounded-0">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const viewImage = (url) => {
+        $('#imagePreview img')[0].setAttribute('src', url);
+        $('#imagePreview').addClass('active');
+      };
+
+      const closeImagePreview = () => {
+        $('#imagePreview').removeClass('active');
+      };
+
+      const setCategory = (category) => {
+        $('.section-3 .row .item').each((index, element) => {
+          console.log(element.getAttribute('data-category'), element);
+
+          const itemCategory = element.getAttribute('data-category');
+
+          if (category === '1') {
+            element.classList.remove('d-none');
+          } else {
+            if (itemCategory !== category) {
+              element.classList.add('d-none');
+            } else {
+              element.classList.remove('d-none');
+            }
+          }
+        });
+
+        $('.section-3 .category .btn').removeClass('active');
+      };
+
+      $('.section-3 .category .btn').on('click', (e) => {
+        setCategory(e.target.value);
+        e.target.classList.add('active');
+      });
+    </script>
+  </body>
+</html>
