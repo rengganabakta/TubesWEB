@@ -1,0 +1,99 @@
+.main {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  header{
+    margin: top 5em;
+  }
+  
+  .jtl-container {
+    padding-top: 20px;
+  }
+  
+  .jtl-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .jtl-card .card-body {
+    padding: 30px;
+  }
+  
+  .jtl-card .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .jtl-card .form-group label {
+    font-weight: 600;
+  }
+  
+  .jtl-card .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  .jtl-card .form-control:focus {
+    border-color: limegreen;
+    box-shadow: none;
+  }
+  
+  .jtl-card .text-danger {
+    font-size: 0.8rem;
+  }
+  
+  input.rating {
+    --webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    background-color: limegreen;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 5px;
+  }
+  
+  /* Atur warna track slider input rating */
+  input.rating::-webkit-slider-runnable-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+  }
+  
+  /* Atur warna thumb slider input rating */
+  input.rating::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Atur warna thumb slider input rating saat aktif */
+  input.rating::-moz-range-thumb {
+    width: 20px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Atur warna thumb slider input rating saat aktif */
+  input.rating::-webkit-slider-thumb:active {
+    background-color: limegreen;
+  }
+  
+  .jtl-btn {
+    background-color: limegreen;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  
+  .jtl-btn:hover {
+    background-color: #32cd32;
+  }

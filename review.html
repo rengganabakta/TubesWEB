@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JokiSkuy</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/review.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <a href="#" class="navbar-brand">JokiSkuy</a>
+
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navbarCollapse" class="collapse navbar-collapse">
+        <div class="navbar-nav ml-auto">
+          <a href="#carousel" class="nav-link">BERANDA</a>
+          <a href="#profil" class="nav-link">PROFIL</a>
+          <a href="#layanan" class="nav-link">LAYANAN</a>
+          <a href="#caraOrder" class="nav-link">CARA ORDER</a>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+        <h1>Review JokiSkuy</h1>
+    </header>
+    <main>
+        <div class="container-fluid jtl-container">
+            <div class="row">
+              <div class="col-sm-12 jtl-col">
+                <div class="card jtl-card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-12 order-md-1">
+                        <form id="formSubmit" class="form-horizontal" method="post" enctype="multipart/form-data" novalidate="novalidate">
+                          <div class="row">
+
+                            <div class="form-group col-md-6 mb-3">
+                              <label for="handphone">Nomor Handphone <small style="font-style:italic;">sesuai dengan no WhatsApp yang digunakan saat order</small></label>
+                              <input type="text" class="form-control" id="handphone" name="handphone">
+                              <span id="error" class="text-danger"></span>
+                            </div>
+                          </div>
+                          <div class="form-group mb-3">
+                            <label for="hasil">Berikan ulasan hasil joki Anda di JokiSkuy</label>
+                            <textarea class="form-control" name="hasil" rows="5"></textarea>
+                            <span id="error" class="text-danger"></span>
+                          </div>
+                          <div class="form-group mb-3">
+                            <label for="sumber">Saran dan Masukan </label>
+                            <textarea class="form-control" name="sumber" rows="5"></textarea>
+                            <span id="error" class="text-danger"></span>
+                          </div>
+                          <div class="form-group mb-3">
+                            <label for="rating">Seberapa puas Anda dengan layanan JokiSkuy ?</label>
+                            <input class="rating" name="rating" max="5" oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)" step="1" style="--stars:5;--value:0" type="range" value="0">
+                            <span id="error" class="text-danger"></span>
+                          </div>
+                          <hr class="mb-4">
+                          <div data-sitekey="6LdXObwgAAAAAFzKNYAdlwAu_dBD5_jEwJP8k1iv" data-theme="light" id="captcha" data-callback="verifyCheck" class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-bpy3is7zfcsd" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdXObwgAAAAAFzKNYAdlwAu_dBD5_jEwJP8k1iv&amp;co=aHR0cHM6Ly9yZXZpZXcuam9raXR1Z2FzbG8uY29tOjQ0Mw..&amp;hl=en&amp;v=rz4DvU-cY2JYCwHSTck0_qm-&amp;theme=light&amp;size=normal&amp;cb=uwfn3va6hc6v"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>                <button class="btn jtl-btn btn-block mt-4" type="submit" disabled="">Kirim</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center" style="margin-top: -40px;margin-bottom: 20px;">
+                  <small style="opacity: 0.1;font-weight:bold;">
+                  2020 © JOKITUGASLO. All right reserved.
+                  </small>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+    </main>
+
+    <footer class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-xl-3 p-4">
+          <h4 class="navbar-brand">JokiSkuy</h4>
+          <p>JokiSkuy adalah...</p>
+        </div>
+        <div class="col-xl-3 p-4">
+          <div class="title">NAVIGASI</div>
+          <div class="line my-2"></div>
+          <div>
+            <a href="#carousel">BERANDA</a>
+          </div>
+          <div>
+            <a href="#profil">PROFIL</a>
+          </div>
+          <div>
+            <a href="#layanan">LAYANAN</a>
+          </div>
+          <div>
+            <a href="#caraOrder">CARA ORDER</a>
+          </div>
+        </div>
+        <div class="col-xl-3 p-4">
+          <div class="title">HUBUNGI KAMI</div>
+          <div class="line my-2"></div>
+          <p class="mb-1">JokiSkuy</p>
+          <p class="mb-1">Indonesia</p>
+          <p class="mb-1">
+            <span class="font-weight-bold">Telp :</span> JokiSkuy
+          </p>
+          <p class="mb-2">
+            <span class="font-weight-bold">Email :</span> JokiSkuy
+          </p>
+          <div>
+            <a href="#">
+              <i class="mx-2 ion-social-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="mx-2 ion-social-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="mx-2 ion-social-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="mx-2 ion-social-googleplus"></i>
+            </a>
+            <a href="#">
+              <i class="mx-2 ion-social-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 p-4">
+          <div class="title">INFO KAMI</div>
+          <div class="line my-2"></div>
+          <p>
+            Silahkan masukkan alamat email anda untuk berlangganan informasi
+            dari kami. Anda dapat berhenti sewaktu waktu
+          </p>
+          <div class="form-group row no-gutters">
+            <div class="col-8">
+              <input class="form-control rounded-0" type="text" />
+            </div>
+            <div class="col-4">
+              <button class="btn submit rounded-0">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
