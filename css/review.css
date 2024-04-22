@@ -2,9 +2,10 @@
     padding-top: 100px;
     padding-bottom: 50px;
   }
-
+  
   header{
-    margin: top 5em;
+    padding-top: 5em;
+    padding-left: 12px;
   }
   
   .jtl-container {
@@ -57,7 +58,9 @@
   input.rating::-webkit-slider-runnable-track {
     width: 100%;
     cursor: pointer;
-    background: transparent;
+    background: linear-gradient(to right, limegreen 0%, limegreen calc(var(--value) * 20%), #ccc calc(var(--value) * 20%), #ccc 100%);
+    height: 10px;
+    border-radius: 5px;
   }
   
   /* Atur warna thumb slider input rating */
@@ -70,6 +73,7 @@
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-top: -3px;
   }
   
   /* Atur warna thumb slider input rating saat aktif */
@@ -92,6 +96,7 @@
     color: #ffffff;
     font-weight: 600;
     border-radius: 5px;
+    margin-bottom: 0;
   }
   
   .jtl-btn:hover {
