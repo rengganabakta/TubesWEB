@@ -35,6 +35,11 @@ h2 {
 #sejarah {
     width: 200px;
     height: auto;
+    margin-bottom: 60px;
+}
+
+.Sejarah {
+    text-align: right;
 }
 
 #our-team h2 {
