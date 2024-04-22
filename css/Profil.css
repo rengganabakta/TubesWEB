@@ -1,12 +1,12 @@
 body {
     font-family: "Roboto", sans-serif;
     color: black;
+    background-color: rgb(236, 236, 236);
 }
 
 .order-btn {
     display: block;
     width: fit-content;
-    margin: 0 auto 20px;
     background-color: #2eaf7d;
     color: #fff;
     padding: 10px 20px;
@@ -21,29 +21,51 @@ body {
     color: #fff;
 }
 
-h2 {
-    margin-top: 80px;
-    text-align: center;
-    margin-bottom: 30px;
+.jarak {
+    margin-top: 120px;
 }
 
+h2, .JokiSkuy1 {
+    text-align: right;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+h2, .sejarah1 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+
 #tentang {
-    width: 200px;
+    width: 250px;
     height: auto;
+    border-radius: 15%;
+}
+
+.JokiSkuy {
+    font-size: 20px;
+    text-align: right;    
+    font-weight:600;
 }
 
 #sejarah {
-    width: 200px;
+    width: 250px;
     height: auto;
     margin-bottom: 60px;
+    border-radius: 15%;
 }
 
 .Sejarah {
-    text-align: right;
+    font-size: 20px;
+    text-align: left;
+    font-weight:600;
 }
 
 #our-team h2 {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #our-team {
@@ -127,6 +149,31 @@ h2 {
     .cards-wrapper {
         overflow-x: auto;
         justify-content: flex-start;
+    }
+
+    #tentang {
+        margin-top: 70px;
+        width: 230px;
+    }
+
+    #sejarah {
+        margin-top: 90px;
+        width: 230px;
+    }
+    
+    .JokiSkuy,.Sejarah {
+        font-size: 1rem; /* Sesuaikan dengan ukuran font normal yang Anda inginkan */
+    }
+    
+    .col-3 {
+        flex: 0 0 44%; /* 5/12 * 100% */
+        max-width: 44%; /* Batasi lebar maksimal */
+    }
+
+    /* Sesuaikan lebar konten */
+    .col-9 {
+        flex: 0 0 56%; /* 7/12 * 100% */
+        max-width: 56%; /* Batasi lebar maksimal */
     }
 }
 
