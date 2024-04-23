@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JokiSkuy</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/ionicons.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/review.css" />
-  </head>
-  <body>
+</head>
+<body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <a href="#" class="navbar-brand">JokiSkuy</a>
 
@@ -51,13 +51,7 @@
                     >
                       <div class="row">
                         <div class="form-group col-md-6 mb-3">
-                          <label for="handphone"
-                            >Nomor Handphone
-                            <small style="font-style: italic"
-                              >sesuai dengan no WhatsApp yang digunakan saat
-                              order</small
-                            ></label
-                          >
+                          <label for="handphone">Nomor Handphone<small style="font-style: italic">sesuai dengan no WhatsApp yang digunakan saat order</small></label>
                           <input
                             type="text"
                             class="form-control"
@@ -68,9 +62,7 @@
                         </div>
                       </div>
                       <div class="form-group mb-3">
-                        <label for="hasil"
-                          >Berikan ulasan hasil joki Anda di JokiSkuy</label
-                        >
+                        <label for="hasil">Berikan ulasan hasil joki Anda di JokiSkuy</label>
                         <textarea
                           class="form-control"
                           name="hasil"
@@ -87,23 +79,21 @@
                         ></textarea>
                         <span id="error" class="text-danger"></span>
                       </div>
+                      
                       <div class="form-group mb-3">
-                        <label for="rating"
-                          >Seberapa puas Anda dengan layanan JokiSkuy ?</label
-                        >
-                        <input
-                          class="rating"
-                          name="rating"
-                          max="5"
-                          oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
-                          step="1"
-                          style="--stars: 5; --value: 0"
-                          type="range"
-                          value="0"
-                        />
+                        <label for="rating">Seberapa puas Anda dengan layanan JokiSkuy ?</label>
+                        <br>
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="text">★</label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="text">★</label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="text">★</label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="text">★</label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="text">★</label>
+                          </div>
                         <span id="error" class="text-danger"></span>
                       </div>
-                      <hr class="mb-4" />
+                      <br>
+                      <hr class="mb-4"/>
                       <div
                         id="captcha-container"
                         data-sitekey="6LdXObwgAAAAAFzKNYAdlwAu_dBD5_jEwJP8k1iv"
@@ -153,14 +143,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="text-center"
-              style="margin-top: -40px; margin-bottom: 20px"
-            >
-              <small style="opacity: 0.1; font-weight: bold">
-                2020 © JOKITUGASLO. All right reserved.
-              </small>
             </div>
           </div>
         </div>
@@ -261,51 +243,33 @@
             }
           });
       });
-    </script>
-
-    <script>
+ 
       function scaleCaptcha() {
-  const captchaWidth = 304; // Lebar asli captcha
-  const containerWidth = $("#captcha-container").width(); // Mengambil lebar captcha container dengan ID 'captcha-container'
-  let captchaScale = 1; // Inisialisasi skala captcha
-  let captchaOriginalPosition = {}; // Simpan posisi asli captcha
+        const captchaWidth = 304; // Lebar asli captcha
+        const containerWidth = $("#captcha-container").width(); // Mengambil lebar captcha container dengan ID 'captcha-container'
+        let captchaScale = 1; // Inisialisasi skala captcha
 
-  // Tentukan skala berdasarkan lebar layar
-  if (containerWidth < captchaWidth) {
-    captchaScale = containerWidth / captchaWidth; // Skala sesuai dengan lebar layar
-  }
+        // Tentukan skala berdasarkan lebar layar
+        if (containerWidth < captchaWidth) {
+          captchaScale = containerWidth / captchaWidth; // Skala sesuai dengan lebar layar
+        }
 
-  // Simpan posisi asli captcha sebelum mengubah skala
-  if (Object.keys(captchaOriginalPosition).length === 0) {
-    captchaOriginalPosition = $(".g-recaptcha").position();
-  }
+        // Terapkan transformasi skala pada captcha
+        $(".g-recaptcha").css({
+          transform: "scale(" + captchaScale + ")",
+          "transform-origin": "center", // Set transform-origin ke tengah captcha
+        });
+      }
 
-  // Terapkan transformasi skala pada captcha
-  $(".g-recaptcha").css({
-    transform: "scale(" + captchaScale + ")",
-    "transform-origin": "center", // Set transform-origin ke tengah captcha
-  });
+      $(document).ready(function () {
+        scaleCaptcha(); // Panggil fungsi saat halaman dimuat
+      });
 
-  // Kembalikan posisi captcha ke posisi asli setelah transformasi selesai
-  if (captchaScale === 1 && Object.keys(captchaOriginalPosition).length > 0) {
-    $(".g-recaptcha").css({
-      position: "absolute",
-      top: captchaOriginalPosition.top,
-      left: captchaOriginalPosition.left,
-    });
-  }
-}
-
-$(document).ready(function () {
-  scaleCaptcha(); // Panggil fungsi saat halaman dimuat
-});
-
-$(window).resize(function () {
-  scaleCaptcha(); // Panggil fungsi saat ukuran jendela berubah
-});
-
-
-
+      $(window).resize(function () {
+        scaleCaptcha(); // Panggil fungsi saat ukuran jendela berubah
+      });
     </script>
-  </body>
+    
+</body>
 </html>
+

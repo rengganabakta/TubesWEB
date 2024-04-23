@@ -12,6 +12,10 @@
     padding-top: 20px;
   }
   
+.jtl-col {
+  margin-bottom: 0; /* Menambahkan margin-bottom: 0; */
+}
+
   .jtl-card {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -20,6 +24,7 @@
   
   .jtl-card .card-body {
     padding: 30px;
+    margin-bottom: 0;
   }
   
   .jtl-card .form-group {
@@ -44,52 +49,42 @@
     font-size: 0.8rem;
   }
   
-  input.rating {
-    --webkit-appearance: none;
-    appearance: none;
-    height: 10px;
-    background-color: limegreen;
-    border-radius: 5px;
-    outline: none;
-    margin-top: 5px;
-  }
-  
-  /* Atur warna track slider input rating */
-  input.rating::-webkit-slider-runnable-track {
-    width: 100%;
-    cursor: pointer;
-    background: linear-gradient(to right, limegreen 0%, limegreen calc(var(--value) * 20%), #ccc calc(var(--value) * 20%), #ccc 100%);
-    height: 10px;
-    border-radius: 5px;
-  }
-  
-  /* Atur warna thumb slider input rating */
-  input.rating::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: white;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    margin-top: -3px;
-  }
-  
-  /* Atur warna thumb slider input rating saat aktif */
-  input.rating::-moz-range-thumb {
-    width: 20px;
-    height: 10px;
-    background: white;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Atur warna thumb slider input rating saat aktif */
-  input.rating::-webkit-slider-thumb:active {
-    background-color: limegreen;
-  }
+  .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
   
   .jtl-btn {
     background-color: limegreen;
@@ -101,4 +96,4 @@
   
   .jtl-btn:hover {
     background-color: #32cd32;
-  }
+  } 
