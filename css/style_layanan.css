@@ -6,6 +6,7 @@
 .wrapper>p,
 .wrapper>h1 {
     margin: 1.5rem 0;
+    text-align: center;
 }
 
 .wrapper>h1 {
@@ -13,11 +14,20 @@
 }
 
 /* slide 1 start */
-.col-md-6 {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
+    height: 100vh;
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
     max-width: 90%;
 }
 
@@ -28,8 +38,6 @@
     border-radius: 10px;
 }
 
-
-/* Gaya untuk teks */
 .col-md-6 p {
     font-size: 18px;
     line-height: 1.6;
@@ -42,17 +50,32 @@
     max-width: 100%;
     border-radius: 20px;
     box-shadow: 0 0 50px rgba(2, 53, 60, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#button {
+    padding: 10px 0px;
+
 }
 
 /* Media query untuk responsif */
 @media (max-width: 768px) {
     .col-md-6 img {
         margin-bottom: 20px;
-        /* Jarak bawah gambar saat tampilan kecil */
+    }
+
+    #border {
+        margin-left: auto;
     }
 }
 
-/* slide 1 ends */
+/* grid 1 ends */
+/* Slider Start*/
+
+/* Slider Ends */
 /* FAQ Stlye Start */
 .accordion {
     background-color: white;
@@ -78,8 +101,8 @@
 .accordion:focus,
 .accordion:hover {
     background-color: rgba(193, 245, 237, 0.2);
-    outline: none; 
-    border-color: transparent; 
+    outline: none;
+    border-color: transparent;
     border-radius: 15px;
 }
 
@@ -103,6 +126,13 @@
 
 .faq.active {
     border: none;
+}
+
+@media (max-width: 768px) {
+    .wrapper>h1 {
+        letter-spacing: 3px;
+        font-size: 2rem;
+    }
 }
 
 /* FAQ Stlye ends */

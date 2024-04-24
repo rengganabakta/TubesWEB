@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_layanan.css">
-    
+
 
 </head>
 
@@ -33,30 +33,36 @@
     </nav>
     <!-- nav end -->
 
+    <br>
+    <br>
+    <br>
+
     <!-- content start -->
     <!-- Grid1 Start -->
-    <br>
-    <br>
-    <br>
     <div class="row">
         <!-- Kolom pertama (gambar) -->
         <div class="col-md-6">
-            <img src="./image/6920933.jpg" class="img-fluid" alt="Gambar">
+            <img src="./image/6920933.jpg" class="img-fluid" alt="Gambar" style="border-radius: 8px;" 8px;>
         </div>
         <!-- Kolom kedua (teks) -->
         <div class="col-md-6">
             <div id="border">
-                <h3>Joki Tugas Harian / Tubes</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum facere ratione ex consectetur tempora
-                    repudiandae quae nesciunt aut, possimus dolorem qui blanditiis vero, dicta magni eum illum similique
-                    commodi dolores.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum facere ratione ex consectetur tempora
-                    repudiandae quae nesciunt aut, possimus dolorem qui blanditiis vero, dicta magni eum illum similique
-                    commodi dolores.</p>
+                <h3>Joki Tugas Harian / Tugas Besar</h3>
+                <p>Butuh bantuan menyelesaikan tugas harian atau tugas besar? Kami siap membantu Anda! Dengan pengalaman
+                    yang luas dan tim ahli kami, kami dapat menyelesaikan tugas Anda dengan cepat dan efisien.</p>
+                <p>Kami memahami betapa berharganya waktu dan kualitas. Percayakan pada kami untuk memberikan solusi
+                    yang tepat untuk semua kebutuhan tugas Anda. Hubungi kami sekarang untuk mendapatkan bantuan yang
+                    Anda perlukan.</p>
+                <button id="whatsappBtn"
+                    style="background-color: #25d366; color: #ffffff; border: none; padding: 10px 20px; border-radius: 8px; outline: none;">Hubungi
+                    Kami</button>
             </div>
         </div>
     </div>
     <!-- Grid1 Ends -->
+    <!-- Slider Start -->
+    
+    <!-- Slider Ends -->
     <!-- FAQ Start -->
     <div class="wrapper">
         <h1>Frequently Asked Questions</h1>
@@ -283,6 +289,16 @@
                 }
             });
         }
+    </script>
+
+    <!-- API Whatsapp -->
+    <script>
+        document.getElementById("whatsappBtn").addEventListener("click", function() {
+            var phoneNumber = "628873433309"; // Ganti dengan nomor telepon tujuan
+            var message = "Halo, saya tertarik dengan layanan Anda. Silakan beri saya informasi lebih lanjut ."; // Pesan yang akan ditampilkan di obrolan WhatsApp
+            var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
+            window.open(url, "_blank");
+        });
     </script>
 </body>
 
