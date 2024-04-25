@@ -145,14 +145,14 @@ h2, .sejarah1 {
     background-color: gray;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
     .cards-wrapper {
         overflow-x: auto;
         justify-content: flex-start;
     }
 
     #tentang {
-        margin-top: 70px;
+        margin-top: 50px;
         width: 230px;
     }
 
@@ -177,8 +177,9 @@ h2, .sejarah1 {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
     .controls {
         display: none;
     }
 }
+
