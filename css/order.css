@@ -1,10 +1,55 @@
-body{
-  size: 100vh;
+.hero-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3)), url("/image/ORDER1.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateZ(0);
 }
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  color: limegreen;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  text-align: center;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+hr {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 100%;
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), limegreen, rgba(255, 255, 255, 0));
+  animation: fadeInDown 1s ease-in-out;
+}
+
+
+
+/* Gaya tambahan untuk bagian "Cara Order" */
 #caraOrder {
   padding: 50px 0;
-  margin-top: 5em;
+  background-color: #f0f0f0; /* Warna latar belakang */
+  border-radius: 10px; /* Membuat sudut box lebih lembut */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Menambahkan bayangan lembut */
 }
 
 #caraOrder h2 {
@@ -30,7 +75,9 @@ body{
 /* Gaya tambahan untuk bagian "Cara Bayar" */
 #caraBayar {
   padding: 50px 0;
-  margin-top: 5em;
+  background-color: #f0f0f0; /* Warna latar belakang */
+  border-radius: 10px; /* Membuat sudut box lebih lembut */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan lembut */
 }
 
 #caraBayar h2 {
@@ -80,7 +127,16 @@ body{
   color: #555;
 }
 
+#caraOrder ol li::before,
+#caraBayar ol li::before {
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
 #caraOrder p:last-child,
 #caraBayar p:last-child {
   margin-bottom: 0;
 }
+
