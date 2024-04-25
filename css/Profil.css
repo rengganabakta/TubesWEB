@@ -1,85 +1,126 @@
-/* Gaya keseluruhan */
 body {
-    font-family: 'Roboto', sans-serif; /* Font modern */
-    color: black; /* Warna teks */
+    font-family: "Roboto", sans-serif;
+    color: black;
+    background-color: rgb(236, 236, 236);
 }
 
-/* Gaya tombol "Order Sekarang" */
 .order-btn {
-    display: block; /* Menjadikan tombol sebagai blok elemen */
-    width: fit-content; /* Mengatur lebar tombol sesuai dengan konten */
-    margin: 0 auto 20px; /* Memberikan margin atas dan bawah serta auto untuk tengah */
-    background-color: #2EAF7D; /* Warna latar belakang */
-    color: #fff; /* Warna teks */
-    padding: 10px 20px; /* Padding tombol */
-    text-decoration: none; /* Menghapus dekorasi teks */
-    border-radius: 30px; /* Mengubah sudut border */
-    transition: background-color 0.3s ease; /* Efek transisi */
+    display: block;
+    width: fit-content;
+    background-color: #2eaf7d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
 }
 
 .order-btn:hover {
-    background-color: #1d845f; /* Warna latar belakang saat hover */
+    background-color: #1d845f;
     text-decoration: none;
     color: #fff;
 }
 
-/* Gaya judul */
-h2 {
-    margin-top: 80px;
-    text-align: center;
-    margin-bottom: 30px;
+.jarak {
+    margin-top: 120px;
 }
 
-#our-team h2{
+h2, .JokiSkuy1 {
+    text-align: right;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+h2, .sejarah1 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+
+#tentang {
+    width: 250px;
+    height: auto;
+    border-radius: 15%;
+}
+
+.JokiSkuy {
+    font-size: 20px;
+    text-align: right;    
+    font-weight:600;
+}
+
+#sejarah {
+    width: 250px;
+    height: auto;
+    margin-bottom: 60px;
+    border-radius: 15%;
+}
+
+.Sejarah {
+    font-size: 20px;
+    text-align: left;
+    font-weight:600;
+}
+
+#our-team h2 {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #our-team {
-    background-color: lightgray; /* Warna latar belakang baru untuk bagian "Our Team" */
-    padding: 50px 0; /* Padding atas dan bawah untuk memberikan ruang */
+    background-color: lightgray;
+    padding: 50px 0;
 }
 
+.slider-wrapper {
+    overflow: hidden;
+    position: relative;
+}
 
-/* Gaya kartu tim */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.cards {
+    display: flex;
+}
+
 .card {
-    min-width: 15rem; /* Lebar minimum kartu */
-    max-width: calc(100% - 40px); /* Lebar maksimum kartu */
+    min-width: 15rem;
+    max-width: calc(100% - 40px);
     margin: 20px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease;
     border-radius: 10px;
-    text-align: center; /* Tengahkan teks */
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.card-body{
+    margin-bottom: 10px;
+}
 
-/* Efek hover */
 .card:hover {
     transform: scale(1.05);
 }
 
-/* Gaya gambar tim */
 .card img {
-    border-radius: 10px 10px 0 0; /* Membuat sudut gambar membulat di atas */
+    border-radius: 10px 10px 0 0;
     width: 100%;
     height: auto;
 }
 
-/* Gaya judul tim */
 .card .card-title {
     margin-top: 10px;
     font-size: 1.2rem;
+    margin: 0;
 }
 
-/* Gaya wrapper untuk slide */
-.cards-wrapper {
-    display: flex;
-}
-
-/* Gaya kontrol navigasi */
 .controls {
     text-align: center;
     margin-top: 20px;
@@ -87,7 +128,7 @@ h2 {
 
 .prev-btn,
 .next-btn {
-    font-weight:1000;
+    font-weight: 1000;
     color: black;
     border: none;
     padding: 7px 10px;
@@ -95,24 +136,49 @@ h2 {
     cursor: pointer;
     border-radius: 5px;
     font-size: 1.2rem;
-    transition: background-color 0.3s ease; /* Efek transisi */
+    transition: background-color 0.3s ease;
     background-color: lightgray;
 }
 
 .prev-btn:hover,
 .next-btn:hover {
-    background-color: gray; /* Warna tombol navigasi saat hover */
+    background-color: gray;
 }
 
-/* Media query untuk layar kecil */
 @media (max-width: 768px) {
     .cards-wrapper {
         overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    #tentang {
+        margin-top: 70px;
+        width: 230px;
+    }
+
+    #sejarah {
+        margin-top: 90px;
+        width: 230px;
+    }
+    
+    .JokiSkuy,.Sejarah {
+        font-size: 1rem; /* Sesuaikan dengan ukuran font normal yang Anda inginkan */
+    }
+    
+    .col-3 {
+        flex: 0 0 44%; /* 5/12 * 100% */
+        max-width: 44%; /* Batasi lebar maksimal */
+    }
+
+    /* Sesuaikan lebar konten */
+    .col-9 {
+        flex: 0 0 56%; /* 7/12 * 100% */
+        max-width: 56%; /* Batasi lebar maksimal */
     }
 }
 
 @media (min-width: 769px) {
     .controls {
-        display: none; /* Menyembunyikan tombol slide pada layar lebar */
+        display: none;
     }
 }

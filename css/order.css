@@ -1,18 +1,15 @@
-body,html {
-  overflow-x: hidden;
-  height: 100%;
-  margin: 0;
+body{
+  size: 100vh;
 }
 
-/* Gaya tambahan untuk bagian "Cara Order" */
 #caraOrder {
-  padding: 2rem;
+  padding: 50px 0;
+  margin-top: 5em;
 }
 
 #caraOrder h2 {
   color: limegreen;
   font-weight: 700;
-  text-align: center;
 }
 
 #caraOrder p {
@@ -32,13 +29,13 @@ body,html {
 
 /* Gaya tambahan untuk bagian "Cara Bayar" */
 #caraBayar {
-  padding: 2rem;
+  padding: 50px 0;
+  margin-top: 5em;
 }
 
 #caraBayar h2 {
   color: limegreen;
   font-weight: 700;
-  text-align: center;
 }
 
 #caraBayar p {
@@ -57,14 +54,14 @@ body,html {
 }
 
 /* Desain tambahan untuk membuat bagian "Cara Order" dan "Cara Bayar" lebih menarik */
+
 #caraOrder,
 #caraBayar {
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 4.5em;
-  padding: 2rem; /* Sesuaikan padding sesuai kebutuhan */
-  margin-top: 7.5em;
+  padding: 30px;
+  margin-bottom: 30px;
 }
 
 #caraOrder h2,
@@ -87,71 +84,3 @@ body,html {
 #caraBayar p:last-child {
   margin-bottom: 0;
 }
-
-.carousel-control-prev,
-.carousel-control-next {
-  color: #fff; /* Warna teks */
-  font-size: 1.5rem; /* Ukuran teks */
-  background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang */
-  border-radius: 50%; /* Bentuk border */
-  width: 40px; /* Lebar tombol */
-  height: 40px; /* Tinggi tombol */
-  top: 50%; /* Posisi tombol */
-  transform: translateY(-50%); /* Posisi tombol */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-image: none; /* Hilangkan ikon default */
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  background-color: rgba(0, 0, 0, 0.7); /* Warna latar belakang saat hover */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px; /* Sesuaikan ukuran panah sesuai kebutuhan */
-  height: 50px; /* Sesuaikan ukuran panah sesuai kebutuhan */
-  background-color: transparent; /* Hapus warna latar belakang untuk panah */
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-#caraOrder1,
-#caraBayar1{
-    display: none;
-}
-
-footer{
-    margin-bottom: 0;
-    bottom: 0;
-}
-
-/* Media queries untuk layar berukuran lebih kecil */
-@media (max-width: 768px) {
-    #caraOrder1,
-    #caraBayar1 {
-    display: block !important; /* Sembunyikan pada tampilan desktop */
-  }
-    #caraOrder,
-    #caraBayar{
-    display: none;
-}
-}
-  
-  /* Media queries untuk layar berukuran sangat kecil (misalnya ponsel) */
-  @media (max-width: 576px) {
-    #caraOrder,
-    #caraBayar{
-    display: none;
-  }
-    #caraOrder1,
-    #caraBayar1 {
-      display: block !important; /* Tampilkan pada tampilan mobile */
-    }
-  }
