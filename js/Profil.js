@@ -5,11 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const slider = document.querySelector('.slider');
     const cards = document.querySelectorAll('.card');
     const cardWidth = cards[0].offsetWidth;
-    let numVisibleSlides = 3; // Jumlah slide yang akan ditampilkan sebelum kembali ke slide pertama
-    let currentIndex = 0;
-    let autoSlideInterval; // Interval untuk slider otomatis
+    let numVisibleSlides = 3; 
+    let autoSlideInterval; 
 
-    // Update numVisibleSlides jika lebar halaman berubah
     function updateVisibleSlides() {
         const sliderWrapperWidth = sliderWrapper.offsetWidth;
         numVisibleSlides = Math.floor(sliderWrapperWidth / cardWidth);
@@ -32,30 +30,29 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function startAutoSlide() {
-        autoSlideInterval = setInterval(nextSlide, 5000); // Panggil nextSlide setiap 5 detik
+        autoSlideInterval = setInterval(nextSlide, 5000); 
     }
 
     function stopAutoSlide() {
-        clearInterval(autoSlideInterval); // Hentikan interval
+        clearInterval(autoSlideInterval); 
     }
 
-    // Panggil fungsi updateVisibleSlides saat halaman dimuat dan saat window diresize
     window.addEventListener('resize', updateVisibleSlides);
     updateVisibleSlides();
 
     prevBtn.addEventListener('click', () => {
-        stopAutoSlide(); // Hentikan auto slide saat tombol prev ditekan
+        stopAutoSlide(); 
         prevSlide();
     });
     nextBtn.addEventListener('click', () => {
-        stopAutoSlide(); // Hentikan auto slide saat tombol next ditekan
+        stopAutoSlide(); 
         nextSlide();
     });
 
-    sliderWrapper.addEventListener('mouseenter', stopAutoSlide); // Hentikan auto slide saat cursor masuk ke slider
-    sliderWrapper.addEventListener('mouseleave', startAutoSlide); // Mulai kembali auto slide saat cursor meninggalkan slider
+    sliderWrapper.addEventListener('mouseenter', stopAutoSlide); 
+    sliderWrapper.addEventListener('mouseleave', startAutoSlide); 
 
-    startAutoSlide(); // Mulai auto slide saat halaman dimuat
+    startAutoSlide(); 
 
     showCard(currentIndex);
 });
