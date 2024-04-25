@@ -55,6 +55,18 @@
     justify-content: center;
     align-items: center;
 }
+#border2 {
+    padding: 20px;
+    max-width: 100%;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(2, 53, 60, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
 #button {
     padding: 10px 0px;
@@ -123,10 +135,15 @@
     margin: 0;
 }
 
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .prev-btn,
 .next-btn {
     font-weight: 1000;
-    color: black;
+    color: #c1f6ed;
     border: none;
     padding: 7px 10px;
     margin: 0 5px;
@@ -134,7 +151,9 @@
     border-radius: 5px;
     font-size: 1.2rem;
     transition: background-color 0.3s ease;
-    background-color: lightgray;
+    background-color: #02353c;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @media (max-width: 768px) {
@@ -154,6 +173,20 @@
         max-width: 56%; /* Batasi lebar maksimal */
     }
 }
+@media (min-width: 780px) {
+    .slider-wrapper {
+        overflow: hidden;
+    }
+    
+    
+}
+
+@media (max-width: 779px) {
+    .slider {
+        width: 100%; /* Atur kembali lebar ke 100% untuk tampilan seluler */
+    }
+}
+
 
 /* Slider Ends */
 /* FAQ Stlye Start */
