@@ -123,6 +123,20 @@
     margin: 0;
 }
 
+.prev-btn,
+.next-btn {
+    font-weight: 1000;
+    color: black;
+    border: none;
+    padding: 7px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    background-color: lightgray;
+}
+
 @media (max-width: 768px) {
     .cards-wrapper {
         overflow-x: auto;
