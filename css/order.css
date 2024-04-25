@@ -42,16 +42,16 @@ hr {
   animation: fadeInDown 1s ease-in-out;
 }
 
-
-
 /* Gaya tambahan untuk bagian "Cara Order" */
-#caraOrder {
-  padding: 50px 0;
-  background-color: #f0f0f0; /* Warna latar belakang */
-  border-radius: 10px; /* Membuat sudut box lebih lembut */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Menambahkan bayangan lembut */
-}
 
+#caraOrder,
+#caraBayar {
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3); /* Menyesuaikan bayangan kotak */
+  padding: 30px;
+  margin-bottom: 30px;
+}
 #caraOrder h2 {
   color: limegreen;
   font-weight: 700;
@@ -73,12 +73,6 @@ hr {
 }
 
 /* Gaya tambahan untuk bagian "Cara Bayar" */
-#caraBayar {
-  padding: 50px 0;
-  background-color: #f0f0f0; /* Warna latar belakang */
-  border-radius: 10px; /* Membuat sudut box lebih lembut */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan lembut */
-}
 
 #caraBayar h2 {
   color: limegreen;
