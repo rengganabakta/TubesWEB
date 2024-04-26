@@ -1,12 +1,11 @@
-.nav-link {
-    font-weight:700 !important;
+.navbar .navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    transition: 250ms;
+    color: #ffffff !important;
+    margin-right: 10px;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-    color: black;
-    background-color: white;
-}
 
 .order-btn {
     display: block;
