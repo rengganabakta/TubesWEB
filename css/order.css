@@ -1,10 +1,10 @@
 .hero-container {
-  background-image: url(/image/ORDER1.png);
+  background-image: url('/image/ORDER1.png');
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
- background-size: cover;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +37,12 @@ hr {
   width: 100%;
   border: 0;
   height: 3px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), limegreen, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    limegreen,
+    rgba(255, 255, 255, 0)
+  );
   animation: fadeInDown 1s ease-in-out;
 }
 
@@ -99,7 +104,6 @@ hr {
 }
 
 /* Desain tambahan untuk membuat bagian "Cara Order" dan "Cara Bayar" lebih menarik */
-
 
 #caraOrder h2,
 #caraBayar h2 {
@@ -171,4 +175,3 @@ hr {
     margin-top: 15px;
   }
 }
-
