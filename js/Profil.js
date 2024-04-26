@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function startAutoSlide() {
-        if (window.matchMedia("(min-width: 1025px)").matches) { // Check if screen width is 1025px or more
-            autoSlideInterval = setInterval(nextSlide, 5000);
+        if (window.innerWidth <= 1025) {
+            autoSlideInterval = setInterval(nextSlide, 2000);
         }
     }
 
@@ -52,4 +52,12 @@ document.addEventListener('DOMContentLoaded', function () {
     startAutoSlide();
 
     showCard(currentIndex);
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth <= 1025) {
+            startAutoSlide();
+        } else {
+            stopAutoSlide();
+        }
+    });
 });
