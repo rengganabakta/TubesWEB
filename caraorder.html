@@ -40,7 +40,7 @@
       </div>
     </nav>
 
-    <div id="caraOrder" class="container">
+    <div id="caraOrder" class="container fade-in-left">
       <h2>How to Order</h2>
       <ol>
         <li>Pilih jenis joki yang Anda inginkan</li>
@@ -71,7 +71,7 @@
       </p>
     </div>
 
-    <div id="caraBayar" class="container">
+    <div id="caraBayar" class="container fade-in-left">
       <h2>Payment Method</h2>
       <p>Kami menyediakan beberapa opsi pembayaran yang mudah dan aman:</p>
       <ol>
@@ -81,8 +81,8 @@
           sebagai referensi pembayaran.
         </li>
         <li>
-          <strong>Dompet Digital:</strong> Kami juga menerima pembayaran melalui
-          berbagai platform dompet digital yang populer.
+          <strong>E-Wallet:</strong> Kami juga menerima pembayaran melalui
+          berbagai platform E-Wallet yang populer.
         </li>
       </ol>
       <p>
@@ -199,6 +199,37 @@
           setCategory(e.target.value);
           e.target.classList.add('active');
         });
+
+        // Fungsi untuk mengecek apakah elemen dalam viewport
+  function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+ // Fungsi untuk menambahkan/menghapus class pada scroll
+ function handleScroll() {
+    var caraOrderElement = document.getElementById("caraOrder");
+    var caraBayarElement = document.getElementById("caraBayar");
+    
+    if (isInViewport(caraOrderElement)) {
+      caraOrderElement.classList.add("show");
+    } else {
+      caraOrderElement.classList.remove("show");
+    }
+
+    if (isInViewport(caraBayarElement)) {
+      caraBayarElement.classList.add("show");
+    } else {
+      caraBayarElement.classList.remove("show");
+    }
+  }
+  // Event listener untuk mendeteksi scroll
+  window.addEventListener("scroll", handleScroll);
       </script>
   </body>
 </html>
