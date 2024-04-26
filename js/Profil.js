@@ -5,13 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const slider = document.querySelector('.slider');
     const cards = document.querySelectorAll('.card');
     const cardWidth = cards[0].offsetWidth;
-    let numVisibleSlides = 3; 
-    let autoSlideInterval; 
-
-    function updateVisibleSlides() {
-        const sliderWrapperWidth = sliderWrapper.offsetWidth;
-        numVisibleSlides = Math.floor(sliderWrapperWidth / cardWidth);
-    }
+    const sliderWrapperWidth = sliderWrapper.offsetWidth;
+    const numVisibleCards = Math.floor(sliderWrapperWidth / cardWidth);
+    let currentIndex = 0;
+    let autoSlideInterval;
 
     function showCard(index) {
         const offset = -index * cardWidth;
@@ -20,39 +17,37 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function prevSlide() {
-        currentIndex = (currentIndex === 0) ? cards.length - numVisibleSlides : currentIndex - 1;
+        currentIndex = (currentIndex === 0) ? cards.length - numVisibleCards : currentIndex - 1;
         showCard(currentIndex);
     }
 
     function nextSlide() {
-        currentIndex = (currentIndex === cards.length - numVisibleSlides) ? 0 : currentIndex + 1;
+        currentIndex = (currentIndex === cards.length - numVisibleCards) ? 0 : currentIndex + 1;
         showCard(currentIndex);
     }
 
     function startAutoSlide() {
-        autoSlideInterval = setInterval(nextSlide, 5000); 
+        autoSlideInterval = setInterval(nextSlide, 5000);
     }
 
     function stopAutoSlide() {
         clearInterval(autoSlideInterval); 
     }
 
-    window.addEventListener('resize', updateVisibleSlides);
-    updateVisibleSlides();
-
     prevBtn.addEventListener('click', () => {
         stopAutoSlide(); 
         prevSlide();
     });
+
     nextBtn.addEventListener('click', () => {
         stopAutoSlide(); 
         nextSlide();
     });
 
     sliderWrapper.addEventListener('mouseenter', stopAutoSlide); 
-    sliderWrapper.addEventListener('mouseleave', startAutoSlide); 
+    sliderWrapper.addEventListener('mouseleave', startAutoSlide);
 
-    startAutoSlide(); 
+    startAutoSlide();
 
     showCard(currentIndex);
 });
