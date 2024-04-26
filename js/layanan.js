@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
         card.addEventListener('click', () => {
             const mataKuliah = card.querySelector('.card-title').textContent;
             const pesan = encodeURIComponent(`Halo, saya tertarik dengan mata kuliah ${mataKuliah}. Berikan saya informasi lebih lanjut.`);
-            window.open(`https://wa.me/6281234567890?text=${pesan}`, '_blank');
+            window.open(`https://wa.me/628873433309?text=${pesan}`, '_blank');
         });
     });
 
