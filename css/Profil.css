@@ -1,5 +1,5 @@
 .nav-link {
-    font-weight:700 !important;
+    font-weight:600 !important;
 }
 
 body {
@@ -51,7 +51,7 @@ h2, .sejarah1 {
 .JokiSkuy {
     font-size: 20px;
     text-align: right;    
-    font-weight:600;
+    font-weight:500;
 }
 
 #sejarah {
@@ -63,7 +63,7 @@ h2, .sejarah1 {
 .Sejarah {
     font-size: 20px;
     text-align: left;
-    font-weight:600;
+    font-weight:500;
 }
 
 #our-team h2 {
@@ -110,6 +110,7 @@ h2, .sejarah1 {
 .card img {
     width: 300px;
     height: auto;
+    border-radius: 10px;
 }
 
 .card .card-title {
