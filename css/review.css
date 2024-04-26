@@ -10,6 +10,7 @@ header{
 
 .jtl-container {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .jtl-col {
@@ -19,7 +20,11 @@ margin-bottom: 0; /* Menambahkan margin-bottom: 0; */
 .jtl-card {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.jtl-card:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Bayangan yang lebih tebal saat dihover */
 }
 
 .jtl-card .card-body {
@@ -97,3 +102,80 @@ margin-bottom: 0; /* Menambahkan margin-bottom: 0; */
 .jtl-btn:hover {
   background-color: #32cd32;
 } 
+
+/* Tablet dan Mobile */
+@media (max-width: 991.98px) {
+  .main {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  header {
+    padding-top: 4em;
+  }
+
+  .jtl-container {
+    padding-top: 10px;
+  }
+
+  .jtl-card .card-body {
+    padding: 20px;
+  }
+
+  .jtl-card .form-group {
+    margin-bottom: 15px;
+  }
+
+  .rate {
+    height: 36px;
+    padding: 0 5px;
+  }
+
+  .jtl-btn {
+    margin-bottom: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+  .main {
+    padding-top: 7em;
+    padding-bottom: 20px;
+  }
+
+  header {
+    padding-top: 4em;
+  }
+
+  .jtl-container {
+    padding-top: 5px;
+  }
+
+  .jtl-card .card-body {
+    padding: 15px;
+  }
+
+  .jtl-card .form-group {
+    margin-bottom: 10px;
+  }
+
+  .rate {
+    height: 30px;
+    padding: 0 3px;
+  }
+}
+
+/* Tablet dan Mobile */
+@media (max-width: 991.98px) {
+  .jtl-card {
+    margin: 0 auto; /* Pusatkan kartu pada tampilan tablet */
+    max-width: 500px; /* Batasi lebar kartu */
+  }
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+  .jtl-card {
+    max-width: 90%; /* Batasi lebar kartu agar sesuai dengan tampilan mobile */
+  }
+}
