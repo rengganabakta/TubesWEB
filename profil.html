@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>JokiSkuy</title>
+    <title>Profil JokiSkuy</title>
     <link rel="icon" href="image/logo/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/ionicons.min.css" />
@@ -34,8 +34,27 @@
             margin-bottom: -50px; 
             padding-bottom: 50px;
         }
+        
+      #scrollToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #555;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 100px;
+      }
+
+      #scrollToTopBtn:hover {
+        background-color: #777;
+      }
     </style>
-    <style></style>
 </head>
 
 <body>
@@ -201,9 +220,46 @@
         </div>
       </div>
     </footer>
+
+    <button
+      onclick="scrollToTop()"
+      id="scrollToTopBtn"
+      title="Go to top"
+      style="display: none"
+    >
+      <i class="ion-arrow-up-a"></i>
+    </button>
+
     <script src="js/Profil.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      function scrollToTop() {
+        const scrollStep = -window.scrollY / (500 / 15);
+        const scrollInterval = setInterval(function () {
+          if (window.scrollY !== 0) {
+            window.scrollBy(0, scrollStep);
+          } else {
+            clearInterval(scrollInterval);
+          }
+        }, 15);
+      }
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById('scrollToTopBtn').style.display = 'block';
+        } else {
+          document.getElementById('scrollToTopBtn').style.display = 'none';
+        }
+      }
+    </script>
 </body>
 
 </html>
