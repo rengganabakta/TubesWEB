@@ -69,14 +69,14 @@ h2, .sejarah1 {
 #our-team {
     background-color: lightgray;
     padding: 50px 0;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 10px #2eaf7d;
 }
 
 .slider-wrapper {
     overflow: hidden;
     display: flex;
-    width: 100%; /* Mengurangi lebar slider */
-    margin: auto; /* Memusatkan slider */
+    width: 100%; 
+    margin: auto; 
 }
 
 .slider {
@@ -94,7 +94,7 @@ h2, .sejarah1 {
     max-width: calc(100% - 40px);
     margin: 20px 10px;
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #2eaf7d;
     transition: transform 0.5s ease;
     border-radius: 10px;
     text-align: center;
@@ -155,11 +155,10 @@ h2, .sejarah1 {
     align-items: center;
     height: auto;
     position: relative; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px #2eaf7d;
 }
 
 .maps {
-    box-shadow: 100px;
     position: absolute;
     top: 30px; 
     z-index: 1;
@@ -169,7 +168,7 @@ h2, .sejarah1 {
 .maps-content {
     margin-top: 90px; 
     margin-bottom: 50px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px #2eaf7d;
     border-radius: 10px; 
     padding: 20px; 
 }
