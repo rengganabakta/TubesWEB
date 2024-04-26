@@ -6,56 +6,58 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/ionicons.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/order.css" />
     <style></style>
   </head>
   <div class="hero-container">
     <div class="hero-text">
-        <h1>Bingung cara order layanan JokiSkuy ?</h1>
-        <hr>
+      <h1>Bingung cara order layanan JokiSkuy ?</h1>
+      <hr />
     </div>
   </div>
 
   <body>
- 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <a href="index.html" class="navbar-brand">JokiSkuy</a>
 
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
       </button>
 
       <div id="navbarCollapse" class="collapse navbar-collapse">
-          <div class="navbar-nav ml-auto">
-              <a href="index.html" class="nav-link">BERANDA</a>
-              <a href="profil.html" class="nav-link ">PROFIL</a>
-              <a href="layanan.html" class="nav-link ">LAYANAN</a>
-              <a href="caraorder.html" class="nav-link active">CARA ORDER</a>
-              <a href="review.html" class="nav-link">REVIEW</a>
-              <a class="btn btn-success order" href="layanan.html">
-                  <i class="ion-social-whatsapp-outline"></i> ORDER NOW
-              </a>
-          </div>
+        <div class="navbar-nav ml-auto">
+          <a href="index.html" class="nav-link">BERANDA</a>
+          <a href="profil.html" class="nav-link">PROFIL</a>
+          <a href="layanan.html" class="nav-link">LAYANAN</a>
+          <a href="caraorder.html" class="nav-link active">CARA ORDER</a>
+          <a href="review.html" class="nav-link">REVIEW</a>
+          <a class="btn btn-success order" href="layanan.html"> ORDER NOW </a>
+        </div>
       </div>
-  </nav>
+    </nav>
     <div id="caraOrder" class="container fade-in-left">
       <h2>How to Order</h2>
       <ol>
         <li>Klik tombol "Order Now" untuk mulai memesan layanan JOkiSkuy</li>
         <li>
-          Lengkapi formulir pemesanan dengan detail yang dibutuhkan dan instruksi khusus jika ada.
+          Lengkapi formulir pemesanan dengan detail yang dibutuhkan dan
+          instruksi khusus jika ada.
         </li>
         <li>
-          Tunggu konfirmasi dari tim kami yang
-          akan berisi estimasi waktu penyelesaian dan rincian pembayaran.
+          Tunggu konfirmasi dari tim kami yang akan berisi estimasi waktu
+          penyelesaian dan rincian pembayaran.
         </li>
         <li>
           Setelah konfirmasi diterima, lakukan pembayaran sesuai dengan
           instruksi yang diberikan.
         </li>
         <li>
-          Setelah pembayaran berhasil diverifikasi, joki tugas Anda
-          akan segera dimulai.
+          Setelah pembayaran berhasil diverifikasi, joki tugas Anda akan segera
+          dimulai.
         </li>
       </ol>
       <p>
@@ -86,7 +88,7 @@
 
     <footer class="container-fluid">
       <div class="row no-gutters">
-        <div class="col-xl-3 p-4">
+        <div class="col-xl-3 p-4 col-lg-3 p-4 col-md-6 p-4 col-sm-12 p-4">
           <h4 class="navbar-brand">JokiSkuy</h4>
           <p class="footer-text">
             JokiSkuy adalah tempat di mana para pelajar dapat dengan mudah
@@ -96,7 +98,7 @@
             efisien.
           </p>
         </div>
-        <div class="col-xl-3 p-4">
+        <div class="col-xl-3 p-4 col-lg-3 p-4 col-md-6 p-4 col-sm-12 p-4">
           <div class="title footer-header">NAVIGASI</div>
           <div class="line my-2"></div>
           <div class="footer-text">
@@ -117,7 +119,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3 p-4">
+        <div class="col-xl-3 p-4 col-lg-3 p-4 col-md-6 p-4 col-sm-12 p-4">
           <div class="title footer-header">HUBUNGI KAMI</div>
           <div class="line my-2"></div>
 
@@ -142,7 +144,7 @@
             </a>
           </div>
         </div>
-        <div class="col-xl-3 p-4">
+        <div class="col-xl-3 p-4 col-lg-3 p-4 col-md-6 p-4 col-sm-12 p-4">
           <div class="title footer-header">VIDEO TERKAIT</div>
           <div class="line my-2"></div>
           <div class="embed-responsive embed-responsive-16by9">
@@ -159,70 +161,72 @@
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <script>
-        const viewImage = (url) => {
-          $('#imagePreview img')[0].setAttribute('src', url);
-          $('#imagePreview').addClass('active');
-        };
-  
-        const closeImagePreview = () => {
-          $('#imagePreview').removeClass('active');
-        };
-  
-        const setCategory = (category) => {
-          $('.section-3 .row .item').each((index, element) => {
-            console.log(element.getAttribute('data-category'), element);
-  
-            const itemCategory = element.getAttribute('data-category');
-  
-            if (category === '1') {
-              element.classList.remove('d-none');
+      const viewImage = (url) => {
+        $('#imagePreview img')[0].setAttribute('src', url);
+        $('#imagePreview').addClass('active');
+      };
+
+      const closeImagePreview = () => {
+        $('#imagePreview').removeClass('active');
+      };
+
+      const setCategory = (category) => {
+        $('.section-3 .row .item').each((index, element) => {
+          console.log(element.getAttribute('data-category'), element);
+
+          const itemCategory = element.getAttribute('data-category');
+
+          if (category === '1') {
+            element.classList.remove('d-none');
+          } else {
+            if (itemCategory !== category) {
+              element.classList.add('d-none');
             } else {
-              if (itemCategory !== category) {
-                element.classList.add('d-none');
-              } else {
-                element.classList.remove('d-none');
-              }
+              element.classList.remove('d-none');
             }
-          });
-  
-          $('.section-3 .category .btn').removeClass('active');
-        };
-  
-        $('.section-3 .category .btn').on('click', (e) => {
-          setCategory(e.target.value);
-          e.target.classList.add('active');
+          }
         });
 
-        // Fungsi untuk mengecek apakah elemen dalam viewport
-  function isInViewport(element) {
-    var rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
+        $('.section-3 .category .btn').removeClass('active');
+      };
 
- // Fungsi untuk menambahkan/menghapus class pada scroll
- function handleScroll() {
-    var caraOrderElement = document.getElementById("caraOrder");
-    var caraBayarElement = document.getElementById("caraBayar");
-    
-    if (isInViewport(caraOrderElement)) {
-      caraOrderElement.classList.add("show");
-    } else {
-      caraOrderElement.classList.remove("show");
-    }
+      $('.section-3 .category .btn').on('click', (e) => {
+        setCategory(e.target.value);
+        e.target.classList.add('active');
+      });
 
-    if (isInViewport(caraBayarElement)) {
-      caraBayarElement.classList.add("show");
-    } else {
-      caraBayarElement.classList.remove("show");
-    }
-  }
-  // Event listener untuk mendeteksi scroll
-  window.addEventListener("scroll", handleScroll);
-      </script>
+      // Fungsi untuk mengecek apakah elemen dalam viewport
+      function isInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      // Fungsi untuk menambahkan/menghapus class pada scroll
+      function handleScroll() {
+        var caraOrderElement = document.getElementById('caraOrder');
+        var caraBayarElement = document.getElementById('caraBayar');
+
+        if (isInViewport(caraOrderElement)) {
+          caraOrderElement.classList.add('show');
+        } else {
+          caraOrderElement.classList.remove('show');
+        }
+
+        if (isInViewport(caraBayarElement)) {
+          caraBayarElement.classList.add('show');
+        } else {
+          caraBayarElement.classList.remove('show');
+        }
+      }
+      // Event listener untuk mendeteksi scroll
+      window.addEventListener('scroll', handleScroll);
+    </script>
   </body>
 </html>
