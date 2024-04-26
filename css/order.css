@@ -1,174 +1,184 @@
-.hero-container {
-  background-image: url(/image/ORDER1.png);
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
- background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateZ(0);
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
+  .header1 {
+    position: relative; /* Diperlukan agar posisi absolut pada gambar bekerja */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .header1 img {
+    position: absolute; /* Gambar diatur mutlak agar bisa tumpang tindih dengan hero-text */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar terisi seluruh area header */
+    z-index: -1; /* Menempatkan gambar di bawah teks */
   }
-}
 
-.hero-text h1 {
-  font-size: 3em;
-  color: limegreen;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(0, 0, 0);
-  text-align: center;
-  animation: fadeInDown 1s ease-in-out;
-}
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-hr {
-  margin: 0 auto;
-  margin-top: 40px;
-  width: 100%;
-  border: 0;
-  height: 3px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), limegreen, rgba(255, 255, 255, 0));
-  animation: fadeInDown 1s ease-in-out;
-}
+  .hero-text {
+    z-index: 1; /* Menempatkan teks di atas gambar */
+    text-align: center;
+  }
 
-/* Gaya tambahan untuk bagian "Cara Order" */
-
-#caraOrder,
-#caraBayar {
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Aturan standar */
-  padding: 30px;
-  margin-bottom: 30px;
-}
-
-#caraOrder {
-  margin-top: 30px; /* Atur jarak antara caraOrder dan hero-container */
-}
-
-#caraOrder h2 {
-  color: limegreen;
-  font-weight: 700;
-}
-
-#caraOrder p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
-}
-
-#caraOrder ol {
-  list-style-type: decimal;
-  margin-left: 20px;
-}
-
-#caraOrder ol li {
-  margin-bottom: 10px;
-}
-
-/* Gaya tambahan untuk bagian "Cara Bayar" */
-
-#caraBayar h2 {
-  color: limegreen;
-  font-weight: 700;
-}
-
-#caraBayar p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
-}
-
-#caraBayar ol {
-  list-style-type: decimal;
-  margin-left: 20px;
-}
-
-#caraBayar ol li {
-  margin-bottom: 10px;
-}
-
-/* Desain tambahan untuk membuat bagian "Cara Order" dan "Cara Bayar" lebih menarik */
-
-
-#caraOrder h2,
-#caraBayar h2 {
-  margin-bottom: 20px;
-}
-
-#caraOrder ol,
-#caraBayar ol {
-  padding-left: 20px;
-}
-
-#caraOrder ol li,
-#caraBayar ol li {
-  margin-bottom: 10px;
-  color: #555;
-}
-
-#caraOrder ol li::before,
-#caraBayar ol li::before {
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-#caraOrder p:last-child,
-#caraBayar p:last-child {
-  margin-bottom: 0;
-}
-
-.fade-in-left {
-  opacity: 0;
-  transform: translateX(-50px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.fade-in-left.show {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-/* Untuk tablet (lebar layar hingga 768px) */
-@media only screen and (max-width: 768px) {
   .hero-text h1 {
-    font-size: 2em; /* Mengurangi ukuran font untuk tampilan yang lebih kecil */
+    font-size: 3em;
+    color: limegreen;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    text-align: center;
+    animation: fadeInDown 1s ease-in-out;
   }
 
-  /* Menyesuaikan padding untuk bagian "Cara Order" dan "Cara Bayar" */
+  hr {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 100%;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), limegreen, rgba(255, 255, 255, 0));
+    animation: fadeInDown 1s ease-in-out;
+  }
+
+  /* Gaya tambahan untuk bagian "Cara Order" */
+
   #caraOrder,
   #caraBayar {
-    padding: 20px;
-  }
-}
-
-/* Untuk perangkat seluler dengan lebar layar hingga 480px */
-@media only screen and (max-width: 480px) {
-  .hero-text h1 {
-    font-size: 1.2em; /* Ukuran font lebih kecil untuk tampilan yang lebih kecil */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Aturan standar */
+    padding: 30px;
+    margin-bottom: 30px;
   }
 
-  /* Menyesuaikan padding untuk bagian "Cara Order" dan "Cara Bayar" */
-  #caraOrder,
-  #caraBayar {
-    padding: 10px;
-  }
-
-  /* Menyesuaikan margin untuk bagian "Cara Order" */
   #caraOrder {
-    margin-top: 15px;
+    margin-top: 30px; /* Atur jarak antara caraOrder dan hero-container */
   }
-}
+
+  #caraOrder h2 {
+    color: limegreen;
+    font-weight: 700;
+  }
+
+  #caraOrder p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  #caraOrder ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+  }
+
+  #caraOrder ol li {
+    margin-bottom: 10px;
+  }
+
+  /* Gaya tambahan untuk bagian "Cara Bayar" */
+
+  #caraBayar h2 {
+    color: limegreen;
+    font-weight: 700;
+  }
+
+  #caraBayar p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  #caraBayar ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+  }
+
+  #caraBayar ol li {
+    margin-bottom: 10px;
+  }
+
+  /* Desain tambahan untuk membuat bagian "Cara Order" dan "Cara Bayar" lebih menarik */
+
+
+  #caraOrder h2,
+  #caraBayar h2 {
+    margin-bottom: 20px;
+  }
+
+  #caraOrder ol,
+  #caraBayar ol {
+    padding-left: 20px;
+  }
+
+  #caraOrder ol li,
+  #caraBayar ol li {
+    margin-bottom: 10px;
+    color: #555;
+  }
+
+  #caraOrder ol li::before,
+  #caraBayar ol li::before {
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  #caraOrder p:last-child,
+  #caraBayar p:last-child {
+    margin-bottom: 0;
+  }
+
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .fade-in-left.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Untuk tablet (lebar layar hingga 768px) */
+  @media only screen and (max-width: 768px) {
+    .hero-text h1 {
+      font-size: 2em; /* Mengurangi ukuran font untuk tampilan yang lebih kecil */
+    }
+
+    /* Menyesuaikan padding untuk bagian "Cara Order" dan "Cara Bayar" */
+    #caraOrder,
+    #caraBayar {
+      padding: 20px;
+    }
+  }
+
+  /* Untuk perangkat seluler dengan lebar layar hingga 480px */
+  @media only screen and (max-width: 480px) {
+    .hero-text h1 {
+      font-size: 1.2em; /* Ukuran font lebih kecil untuk tampilan yang lebih kecil */
+    }
+
+    /* Menyesuaikan padding untuk bagian "Cara Order" dan "Cara Bayar" */
+    #caraOrder,
+    #caraBayar {
+      padding: 10px;
+    }
+
+    /* Menyesuaikan margin untuk bagian "Cara Order" */
+    #caraOrder {
+      margin-top: 15px;
+    }
+  }
 
