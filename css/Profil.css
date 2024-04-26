@@ -79,10 +79,9 @@ h2, .sejarah1 {
 
 .slider-wrapper {
     overflow: hidden;
-    position: relative;
     display: flex;
-    width: 90%; /* Mengurangi lebar slider */
-    margin: 0 auto; /* Memusatkan slider */
+    width: 100%; /* Mengurangi lebar slider */
+    margin: auto; /* Memusatkan slider */
 }
 
 .slider {
@@ -98,7 +97,7 @@ h2, .sejarah1 {
 .card {
     min-width: 15rem;
     max-width: calc(100% - 40px);
-    margin: 20px 30px;
+    margin: 20px 10px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease;
