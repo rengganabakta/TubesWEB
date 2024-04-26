@@ -156,7 +156,7 @@ hr {
 }
 
 /* Untuk tablet (lebar layar hingga 768px) */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .hero-text h1 {
     font-size: 2em; /* Mengurangi ukuran font untuk tampilan yang lebih kecil */
   }
@@ -169,7 +169,7 @@ hr {
 }
 
 /* Untuk perangkat seluler dengan lebar layar hingga 480px */
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .hero-text h1 {
     font-size: 1.2em; /* Ukuran font lebih kecil untuk tampilan yang lebih kecil */
   }
