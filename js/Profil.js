@@ -27,7 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function startAutoSlide() {
-        autoSlideInterval = setInterval(nextSlide, 5000);
+        if (window.innerWidth <= 1025) {
+            autoSlideInterval = setInterval(nextSlide, 2000);
+        }
     }
 
     function stopAutoSlide() {
@@ -50,4 +52,12 @@ document.addEventListener('DOMContentLoaded', function () {
     startAutoSlide();
 
     showCard(currentIndex);
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth <= 1025) {
+            startAutoSlide();
+        } else {
+            stopAutoSlide();
+        }
+    });
 });

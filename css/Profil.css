@@ -50,7 +50,7 @@ h2, .sejarah1 {
 .JokiSkuy {
     font-size: 20px;
     text-align: right;    
-    font-weight:600;
+    font-weight:500;
 }
 
 #sejarah {
@@ -62,25 +62,28 @@ h2, .sejarah1 {
 .Sejarah {
     font-size: 20px;
     text-align: left;
-    font-weight:600;
+    font-weight:500;
 }
 
 #our-team h2 {
     margin-bottom: 10px;
     text-align: center;
+    color: #2eaf7d;
 }
 
 #our-team {
     background-color: lightgray;
     padding: 50px 0;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 10px #2eaf7d;
+    background-image: url(/image/ORDER1.png);
 }
 
 .slider-wrapper {
     overflow: hidden;
     display: flex;
-    width: 100%; /* Mengurangi lebar slider */
-    margin: auto; /* Memusatkan slider */
+    width: 100%; 
+    margin: auto; 
+    margin-bottom: 40px;
 }
 
 .slider {
@@ -97,18 +100,20 @@ h2, .sejarah1 {
     min-width: 15rem;
     max-width: calc(100% - 40px);
     margin: 20px 10px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #efef;
+    box-shadow: 0 4px 8px #2eaf7d;
     transition: transform 0.5s ease;
     border-radius: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .card img {
     width: 300px;
     height: auto;
+    border-radius: 10px;
 }
 
 .card .card-title {
@@ -142,7 +147,7 @@ h2, .sejarah1 {
     border-radius: 5px;
     font-size: 1.2rem;
     transition: background-color 0.3s ease;
-    background-color: lightgray;
+    background-color: #efef;
     margin-bottom: 20px;
 }
 
@@ -158,11 +163,10 @@ h2, .sejarah1 {
     align-items: center;
     height: auto;
     position: relative; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px #2eaf7d;
 }
 
 .maps {
-    box-shadow: 100px;
     position: absolute;
     top: 30px; 
     z-index: 1;
@@ -172,7 +176,7 @@ h2, .sejarah1 {
 .maps-content {
     margin-top: 90px; 
     margin-bottom: 50px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px #2eaf7d;
     border-radius: 10px; 
     padding: 20px; 
 }

@@ -1,452 +1,579 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>JokiSkuy</title>
     <link rel="icon" href="image/logo/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style_layanan.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_layanan.css" />
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <!-- nav start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a href="index.html" class="navbar-brand">JokiSkuy</a>
+      <a href="index.html" class="navbar-brand">JokiSkuy</a>
 
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div id="navbarCollapse" class="collapse navbar-collapse">
-            <div class="navbar-nav ml-auto">
-                <a href="index.html" class="nav-link">BERANDA</a>
-                <a href="profil.html" class="nav-link ">PROFIL</a>
-                <a href="layanan.html" class="nav-link active">LAYANAN</a>
-                <a href="caraorder.html" class="nav-link">CARA ORDER</a>
-                <a href="review.html" class="nav-link">REVIEW</a>
-                <a class="btn btn-success order" href="layanan.html">
-                    <i class="ion-social-whatsapp-outline"></i> ORDER NOW
-                </a>
-            </div>
+      <div id="navbarCollapse" class="collapse navbar-collapse">
+        <div class="navbar-nav ml-auto">
+          <a href="index.html" class="nav-link">BERANDA</a>
+          <a href="profil.html" class="nav-link">PROFIL</a>
+          <a href="layanan.html" class="nav-link active">LAYANAN</a>
+          <a href="caraorder.html" class="nav-link">CARA ORDER</a>
+          <a href="review.html" class="nav-link">REVIEW</a>
+          <a class="btn btn-success order" href="layanan.html">ORDER NOW </a>
         </div>
+      </div>
     </nav>
     <!-- nav end -->
 
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
 
     <!-- content start -->
-    <H1 style="text-align: center;">Our Services</H1>
+    <h1 style="text-align: center">Our Services</h1>
     <!-- Grid1 Start -->
     <div class="row">
-        <!-- Kolom pertama (gambar) -->
-        <div class="col-md-6">
-            <img src="./image/6920933.jpg" class="img-fluid" alt="Gambar" style="border-radius: 8px;" 8px;>
+      <!-- Kolom pertama (gambar) -->
+      <div class="col-md-6">
+        <img
+          src="./image/6920933.jpg"
+          class="img-fluid"
+          alt="Gambar"
+          style="border-radius: 8px"
+          8px;
+        />
+      </div>
+      <!-- Kolom kedua (teks) -->
+      <div class="col-md-6">
+        <div id="border">
+          <h3>Joki Tugas Harian / Tugas Besar</h3>
+          <p>
+            Butuh bantuan menyelesaikan tugas harian atau tugas besar? Kami siap
+            membantu Anda! Dengan pengalaman yang luas dan tim ahli kami, kami
+            dapat menyelesaikan tugas Anda dengan cepat dan efisien.
+          </p>
+          <p>
+            Kami memahami betapa berharganya waktu dan kualitas. Percayakan pada
+            kami untuk memberikan solusi yang tepat untuk semua kebutuhan tugas
+            Anda. Hubungi kami sekarang untuk mendapatkan bantuan yang Anda
+            perlukan.
+          </p>
+          <button
+            id="whatsappBtn"
+            style="
+              background-color: #25d366;
+              color: #ffffff;
+              border: none;
+              padding: 10px 20px;
+              border-radius: 8px;
+              outline: none;
+            "
+          >
+            Hubungi Kami
+          </button>
         </div>
-        <!-- Kolom kedua (teks) -->
-        <div class="col-md-6">
-            <div id="border">
-                <h3>Joki Tugas Harian / Tugas Besar</h3>
-                <p>Butuh bantuan menyelesaikan tugas harian atau tugas besar? Kami siap membantu Anda! Dengan pengalaman
-                    yang luas dan tim ahli kami, kami dapat menyelesaikan tugas Anda dengan cepat dan efisien.</p>
-                <p>Kami memahami betapa berharganya waktu dan kualitas. Percayakan pada kami untuk memberikan solusi
-                    yang tepat untuk semua kebutuhan tugas Anda. Hubungi kami sekarang untuk mendapatkan bantuan yang
-                    Anda perlukan.</p>
-                <button id="whatsappBtn"
-                    style="background-color: #25d366; color: #ffffff; border: none; padding: 10px 20px; border-radius: 8px; outline: none;">Hubungi
-                    Kami</button>
-            </div>
-        </div>
+      </div>
     </div>
     <!-- Grid1 Ends -->
 
     <!-- Slider Start -->
-    <h1 style="text-align: center;">Materi yang Tersedia</h1>
+    <h1 style="text-align: center">Materi yang Tersedia</h1>
     <div class="slider-wrapper">
-        <div class="slider">
-            <div class="cards">
-                <div class="card">
-                    <img src="./image/web.png" class="card-img-top" alt="Gabriel">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Pemprograman Web</h5>
-                        <p style="text-align: start;"><br>Mata kuliah ini membahas tentang pengembangan aplikasi web
-                            menggunakan berbagai teknologi seperti HTML, CSS, JavaScript,</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./image/mds.png" class="card-img-top" alt="Mahendra">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Model dan Simulasi</h5>
-                        <p style="text-align: start;"><br>Mata kuliah ini memperkenalkan konsep-konsep dalam pemodelan
-                            dan simulasi sistem. </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./image/jaringan.png" class="card-img-top" alt="Rengga">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Pemprograman Jaringan</h5>
-                        <p style="text-align: start;"><br>Mata kuliah ini membahas tentang konsep dan teknologi dasar
-                            dalam pemrograman jaringan komputer.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./image/basdat.png" class="card-img-top" alt="Danis">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Basis Data</h5>
-                        <p style="text-align: start;"><br>Mata kuliah ini membahas tentang konsep dasar basis data,
-                            desain basis data, bahasa SQL, normalisasi data, dan pemrosesan transaksi. </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./image/pbo.png" class="card-img-top" alt="Danis">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Pemrograman Berorientasi Objek</h5>
-                        <p style="text-align: start;"><br>Mata kuliah ini membahas tentang konsep dasar dan lanjutan
-                            dalam pemrograman berorientasi objek.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./image/alstruk.png" class="card-img-top" alt="Danis">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Algoritma Struktur Data</h5>
-                        <p style="text-align: start;"><br>Mata kuliah ini membahas tentang algoritma dan struktur data
-                            yang digunakan dalam pemrograman komputer. </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./image/kalkulus.png" class="card-img-top" alt="Danis">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Kalkulus</h5>
-                        <p style="text-align: start;"><br>Mata kuliah ini membahas tentang konsep-konsep kalkulus dalam
-                            matematika, seperti limit, turunan, integral.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./image/web.png" class="card-img-top" alt="Gabriel">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Pemprograman Web</h5>
-                        <p style="text-align: start;"><br>Mata kuliah ini membahas tentang pengembangan aplikasi web
-                            menggunakan berbagai teknologi seperti HTML, CSS, JavaScript.</p>
-                    </div>
-                </div>
+      <div class="slider">
+        <div class="cards">
+          <div class="card">
+            <img src="./image/web.png" class="card-img-top" alt="Gabriel" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Pemprograman Web</h5>
+              <p style="text-align: start">
+                <br />Mata kuliah ini membahas tentang pengembangan aplikasi web
+                menggunakan berbagai teknologi seperti HTML, CSS, JavaScript,
+              </p>
             </div>
+          </div>
+          <div class="card">
+            <img src="./image/mds.png" class="card-img-top" alt="Mahendra" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Model dan Simulasi</h5>
+              <p style="text-align: start">
+                <br />Mata kuliah ini memperkenalkan konsep-konsep dalam
+                pemodelan dan simulasi sistem.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./image/jaringan.png" class="card-img-top" alt="Rengga" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Pemprograman Jaringan</h5>
+              <p style="text-align: start">
+                <br />Mata kuliah ini membahas tentang konsep dan teknologi
+                dasar dalam pemrograman jaringan komputer.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./image/basdat.png" class="card-img-top" alt="Danis" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Basis Data</h5>
+              <p style="text-align: start">
+                <br />Mata kuliah ini membahas tentang konsep dasar basis data,
+                desain basis data, bahasa SQL, normalisasi data, dan pemrosesan
+                transaksi.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./image/pbo.png" class="card-img-top" alt="Danis" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Pemrograman Berorientasi Objek</h5>
+              <p style="text-align: start">
+                <br />Mata kuliah ini membahas tentang konsep dasar dan lanjutan
+                dalam pemrograman berorientasi objek.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./image/alstruk.png" class="card-img-top" alt="Danis" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Algoritma Struktur Data</h5>
+              <p style="text-align: start">
+                <br />Mata kuliah ini membahas tentang algoritma dan struktur
+                data yang digunakan dalam pemrograman komputer.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./image/kalkulus.png" class="card-img-top" alt="Danis" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Kalkulus</h5>
+              <p style="text-align: start">
+                <br />Mata kuliah ini membahas tentang konsep-konsep kalkulus
+                dalam matematika, seperti limit, turunan, integral.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./image/web.png" class="card-img-top" alt="Gabriel" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Pemprograman Web</h5>
+              <p style="text-align: start">
+                <br />Mata kuliah ini membahas tentang pengembangan aplikasi web
+                menggunakan berbagai teknologi seperti HTML, CSS, JavaScript.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="controls">
-        <button class="prev-btn">&lt;</button>
-        <button class="next-btn">&gt;</button>
+      <button class="prev-btn">&lt;</button>
+      <button class="next-btn">&gt;</button>
     </div>
     <!-- Slider Ends -->
     <!-- Grid 2 Start -->
     <div class="row">
-        <div class="col-md-6">            
-            <div id="border2">
-                <h3>Joki Skripsi / Tesis</h3>
-                <p>Apakah Anda sedang merasa terjebak dalam penulisan skripsi atau tesis Anda? Biarkan kami membantu
-                    Anda menavigasi jalan menuju kesuksesan akademis. Dengan tim ahli kami yang berpengalaman, kami
-                    tidak hanya menawarkan bantuan dalam menyelesaikan tulisan Anda, tetapi juga memberikan panduan
-                    mendalam dan dukungan penuh selama proses.</p>
-                <p>Kami memahami betapa pentingnya setiap detail dalam tulisan akademis Anda, dan kami berkomitmen untuk
-                    memberikan kualitas terbaik dengan waktu yang efisien. Percayakan kepada kami untuk membantu Anda
-                    mencapai hasil terbaik. Hubungi kami sekarang untuk konsultasi gratis!</p>
-                <button id="whatsappBtn1"
-                    style="background-color: #25d366; color: #ffffff; border: none; padding: 10px 20px; border-radius: 8px; outline: none;">Hubungi
-                    Kami</button>
-            </div>
-            <!-- Kolom Pertama (teks) -->
-            <div id="border2">
-                <h3>Nikmati Promo-Promo Kami</h3>
-                <ul>
-                    <li>Hemat! Dapatkan diskon hingga 30% untuk semua layanan kami!</li>
-                    <li>Perbaikan tanpa batas! Kami siap melakukan revisi berkali-kali untuk memastikan kepuasan Anda.</li>
-                    <li>Tanpa khawatir! Teks Anda akan terbebas dari kesalahan dan penundaan dengan layanan anti rungkad kami.</li>
-                    <li>Tanpa biaya tambahan! Nikmati layanan kami dengan bebas biaya administrasi.</li>
-                </ul>
-                <button id="whatsappBtn2"
-                    style="background-color: #25d366; color: #ffffff; border: none; padding: 10px 20px; border-radius: 8px; outline: none;">Hubungi
-                    Kami</button>
-            </div>
-            <div id="border2">
-                <img src="./image/404.png" alt="" style="margin-bottom: 30px;">
-                <h3>Tugas kalian tidak tercantum diatas ?</h3>
-                <p>Kami siap membantu Anda dalam berbagai jenis tugas. Jika layanan yang Anda butuhkan tidak terdaftar di atas, jangan ragu untuk menghubungi kami. Tim kami akan dengan senang hati membantu Anda menyelesaikan tugas Anda dengan cepat dan efisien.</p>
-                <button id="whatsappBtn3"
-                    style="background-color: #25d366; color: #ffffff; border: none; padding: 10px 20px; border-radius: 8px; outline: none;">Hubungi Kami</button>
-            </div>
-            
+      <div class="col-md-6">
+        <div id="border2">
+          <h3>Joki Skripsi / Tesis</h3>
+          <p>
+            Apakah Anda sedang merasa terjebak dalam penulisan skripsi atau
+            tesis Anda? Biarkan kami membantu Anda menavigasi jalan menuju
+            kesuksesan akademis. Dengan tim ahli kami yang berpengalaman, kami
+            tidak hanya menawarkan bantuan dalam menyelesaikan tulisan Anda,
+            tetapi juga memberikan panduan mendalam dan dukungan penuh selama
+            proses.
+          </p>
+          <p>
+            Kami memahami betapa pentingnya setiap detail dalam tulisan akademis
+            Anda, dan kami berkomitmen untuk memberikan kualitas terbaik dengan
+            waktu yang efisien. Percayakan kepada kami untuk membantu Anda
+            mencapai hasil terbaik. Hubungi kami sekarang untuk konsultasi
+            gratis!
+          </p>
+          <button
+            id="whatsappBtn1"
+            style="
+              background-color: #25d366;
+              color: #ffffff;
+              border: none;
+              padding: 10px 20px;
+              border-radius: 8px;
+              outline: none;
+            "
+          >
+            Hubungi Kami
+          </button>
         </div>
-        <!-- Kolom Kedua (gambar) -->
-        <div class="col-md-6">
-            <img src="./image/promo.png" class="img-fluid" alt="Gambar" style="border-radius: 8px;" id="imgPromo">
+        <!-- Kolom Pertama (teks) -->
+        <div id="border2">
+          <h3>Nikmati Promo-Promo Kami</h3>
+          <ul>
+            <li>Hemat! Dapatkan diskon hingga 30% untuk semua layanan kami!</li>
+            <li>
+              Perbaikan tanpa batas! Kami siap melakukan revisi berkali-kali
+              untuk memastikan kepuasan Anda.
+            </li>
+            <li>
+              Tanpa khawatir! Teks Anda akan terbebas dari kesalahan dan
+              penundaan dengan layanan anti rungkad kami.
+            </li>
+            <li>
+              Tanpa biaya tambahan! Nikmati layanan kami dengan bebas biaya
+              administrasi.
+            </li>
+          </ul>
+          <button
+            id="whatsappBtn2"
+            style="
+              background-color: #25d366;
+              color: #ffffff;
+              border: none;
+              padding: 10px 20px;
+              border-radius: 8px;
+              outline: none;
+            "
+          >
+            Hubungi Kami
+          </button>
         </div>
-        
+        <div id="border2">
+          <img src="./image/404.png" alt="" style="margin-bottom: 30px" />
+          <h3>Tugas kalian tidak tercantum diatas ?</h3>
+          <p>
+            Kami siap membantu Anda dalam berbagai jenis tugas. Jika layanan
+            yang Anda butuhkan tidak terdaftar di atas, jangan ragu untuk
+            menghubungi kami. Tim kami akan dengan senang hati membantu Anda
+            menyelesaikan tugas Anda dengan cepat dan efisien.
+          </p>
+          <button
+            id="whatsappBtn3"
+            style="
+              background-color: #25d366;
+              color: #ffffff;
+              border: none;
+              padding: 10px 20px;
+              border-radius: 8px;
+              outline: none;
+            "
+          >
+            Hubungi Kami
+          </button>
+        </div>
+      </div>
+      <!-- Kolom Kedua (gambar) -->
+      <div class="col-md-6">
+        <img
+          src="./image/promo.png"
+          class="img-fluid"
+          alt="Gambar"
+          style="border-radius: 8px"
+          id="imgPromo"
+        />
+      </div>
     </div>
     <!-- Grid 2 Ends -->
     <!-- FAQ Start -->
     <div class="wrapper">
-        <h1>Frequently Asked Questions</h1>
+      <h1>Frequently Asked Questions</h1>
 
-        <div class="faq">
-            <button class="accordion">
-                Berapa biaya untuk jasa pengerjaan tugas ?
-                <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="pannel">
-                <p>
-                    Biaya bervariasi tergantung pada kompleksitas tugas, subjek, dan deadline. Kami biasanya
-                    menyesuaikan harga sesuai dengan kebutuhan spesifik Anda.Jadi jangan segan untuk kontak kami
-                    untuk menanyakan harganya.
-                </p>
-            </div>
+      <div class="faq">
+        <button class="accordion">
+          Berapa biaya untuk jasa pengerjaan tugas ?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Biaya bervariasi tergantung pada kompleksitas tugas, subjek, dan
+            deadline. Kami biasanya menyesuaikan harga sesuai dengan kebutuhan
+            spesifik Anda.Jadi jangan segan untuk kontak kami untuk menanyakan
+            harganya.
+          </p>
         </div>
+      </div>
 
-        <div class="faq">
-            <button class="accordion">
-                Berapa banyak subjek yang di cangkup ?
-                <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="pannel">
-                <p>
-                    Kami menawarkan bantuan dalam berbagai subjek, termasuk matematika, ilmu pengetahuan, bahasa,
-                    dan banyak lagi. Jika Anda memiliki kebutuhan khusus, silakan hubungi kami untuk ketersediaan.
-                </p>
-            </div>
+      <div class="faq">
+        <button class="accordion">
+          Berapa banyak subjek yang di cangkup ?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Kami menawarkan bantuan dalam berbagai subjek, termasuk matematika,
+            ilmu pengetahuan, bahasa, dan banyak lagi. Jika Anda memiliki
+            kebutuhan khusus, silakan hubungi kami untuk ketersediaan.
+          </p>
         </div>
+      </div>
 
-        <div class="faq">
-            <button class="accordion">
-                Bagaimana proses kerja jika saya ingin menggunakan jasa Anda?
-                <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="pannel">
-                <p>
-                    Prosesnya sederhana. Anda cukup menghubungi kami dengan detail tugas Anda, dan kami akan
-                    memberikan perkiraan harga dan waktu penyelesaian. Setelah Anda menyetujui, kami akan mulai
-                    bekerja.
-                </p>
-            </div>
+      <div class="faq">
+        <button class="accordion">
+          Bagaimana proses kerja jika saya ingin menggunakan jasa Anda?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Prosesnya sederhana. Anda cukup menghubungi kami dengan detail tugas
+            Anda, dan kami akan memberikan perkiraan harga dan waktu
+            penyelesaian. Setelah Anda menyetujui, kami akan mulai bekerja.
+          </p>
         </div>
+      </div>
 
-        <div class="faq">
-            <button class="accordion">
-                Apakah Anda menjamin keaslian tugas yang dikerjakan ?
-                <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="pannel">
-                <p>
-                    Ya, kami menjamin keaslian dan keamanan tugas yang kami kerjakan. Kami menjaga kerahasiaan dan
-                    tidak akan menyebarkan informasi pribadi Anda.
-                </p>
-            </div>
+      <div class="faq">
+        <button class="accordion">
+          Apakah Anda menjamin keaslian tugas yang dikerjakan ?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Ya, kami menjamin keaslian dan keamanan tugas yang kami kerjakan.
+            Kami menjaga kerahasiaan dan tidak akan menyebarkan informasi
+            pribadi Anda.
+          </p>
         </div>
+      </div>
 
-        <div class="faq">
-            <button class="accordion">
-                Apakah ada opsi revisi jika saya tidak puas dengan hasilnya?
-                <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="pannel">
-                <p>
-                    Kami menyediakan opsi revisi jika Anda tidak puas dengan hasilnya. Kepuasan pelanggan adalah
-                    prioritas kami, dan kami akan bekerja keras untuk memastikan Anda puas dengan layanan kami.
-                </p>
-            </div>
+      <div class="faq">
+        <button class="accordion">
+          Apakah ada opsi revisi jika saya tidak puas dengan hasilnya?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Kami menyediakan opsi revisi jika Anda tidak puas dengan hasilnya.
+            Kepuasan pelanggan adalah prioritas kami, dan kami akan bekerja
+            keras untuk memastikan Anda puas dengan layanan kami.
+          </p>
         </div>
+      </div>
 
-        <div class="faq">
-            <button class="accordion">
-                Berapa lama waktu pengerjaan yang dibutuhkan?
-                <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="pannel">
-                <p>
-                    Waktu pengerjaan tergantung pada kompleksitas tugas dan kebutuhan Anda. Kami akan memberikan
-                    perkiraan waktu saat Anda memberikan detail tugas.
-                </p>
-            </div>
+      <div class="faq">
+        <button class="accordion">
+          Berapa lama waktu pengerjaan yang dibutuhkan?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Waktu pengerjaan tergantung pada kompleksitas tugas dan kebutuhan
+            Anda. Kami akan memberikan perkiraan waktu saat Anda memberikan
+            detail tugas.
+          </p>
         </div>
-        <div class="faq">
-            <button class="accordion">
-                Bagaimana metode pembayaran yang diterima?
-                <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="pannel">
-                <p>
-                    Kami menerima pembayaran melalui berbagai metode, termasuk transfer bank, PayPal, atau kartu
-                    kredit/debit. Kami akan memberikan detail pembayaran saat Anda memesan.
-                </p>
-            </div>
+      </div>
+      <div class="faq">
+        <button class="accordion">
+          Bagaimana metode pembayaran yang diterima?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Kami menerima pembayaran melalui berbagai metode, termasuk transfer
+            bank, PayPal, atau kartu kredit/debit. Kami akan memberikan detail
+            pembayaran saat Anda memesan.
+          </p>
         </div>
+      </div>
     </div>
-    <br>
+    <br />
     <!-- FAQ Ends -->
 
     <!-- content ends -->
     <footer class="container-fluid">
-        <div class="row no-gutters">
-          <div class="col-xl-3 p-4">
-            <h4 class="navbar-brand">JokiSkuy</h4>
-            <p class="footer-text">
-              JokiSkuy adalah tempat di mana para pelajar dapat dengan mudah
-              menemukan seseorang yang siap membantu menyelesaikan tugas-tugas
-              mereka dengan imbalan yang sesuai. Dengan layanan ini, para pelajar
-              dapat mengatasi tantangan tugas-tugas mereka dengan lebih mudah dan
-              efisien.
-            </p>
-          </div>
-          <div class="col-xl-3 p-4">
-            <div class="title footer-header">NAVIGASI</div>
-            <div class="line my-2"></div>
-            <div class="footer-text">
-              <div>
-                <a href="index.html">BERANDA</a>
-              </div>
-              <div>
-                <a href="profil.html">PROFIL</a>
-              </div>
-              <div>
-                <a href="layanan.html">LAYANAN</a>
-              </div>
-              <div>
-                <a href="caraorder.html">CARA ORDER</a>
-              </div>
-              <div>
-                <a href="review.html">REVIEW</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 p-4">
-            <div class="title footer-header">HUBUNGI KAMI</div>
-            <div class="line my-2"></div>
-  
-            <strong class="footer-text">JokiSkuy Team</strong>
-  
-            <p class="mb-1 footer-text">
-              Telkom University Surabaya, East Java, Indonesia
-            </p>
-            <p class="mb-1 footer-text">
-              <span class="font-weight-bold">Telp :</span> 08873433309
-            </p>
-            <p class="mb-2 footer-text">
-              <span class="font-weight-bold">Email :</span> JokiSkuy@gmail.com
-            </p>
-  
+      <div class="row no-gutters">
+        <div class="col-xl-3 p-4 col-lg-3 p-4 col-md-6 p-4 col-sm-12 p-4">
+          <h4 class="navbar-brand">JokiSkuy</h4>
+          <p class="footer-text">
+            JokiSkuy adalah tempat di mana para pelajar dapat dengan mudah
+            menemukan seseorang yang siap membantu menyelesaikan tugas-tugas
+            mereka dengan imbalan yang sesuai. Dengan layanan ini, para pelajar
+            dapat mengatasi tantangan tugas-tugas mereka dengan lebih mudah dan
+            efisien.
+          </p>
+        </div>
+        <div class="col-xl-3 p-4 col-lg-3 p-4 col-md-6 p-4 col-sm-12 p-4">
+          <div class="title footer-header">NAVIGASI</div>
+          <div class="line my-2"></div>
+          <div class="footer-text">
             <div>
-              <a href="#">
-                <i class="mx-2 ikon1 ion-ios-telephone"></i>
-              </a>
-              <a href="#">
-                <i class="mx-2 ikon1 ion-ios-email"></i>
-              </a>
+              <a href="index.html">BERANDA</a>
             </div>
-          </div>
-          <div class="col-xl-3 p-4">
-            <div class="title footer-header">VIDEO TERKAIT</div>
-            <div class="line my-2"></div>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                class="embed-responsive-item"
-                src="https://www.youtube.com/embed/srkG0zqJZSw"
-                allowfullscreen
-              ></iframe>
+            <div>
+              <a href="profil.html">PROFIL</a>
+            </div>
+            <div>
+              <a href="layanan.html">LAYANAN</a>
+            </div>
+            <div>
+              <a href="caraorder.html">CARA ORDER</a>
+            </div>
+            <div>
+              <a href="review.html">REVIEW</a>
             </div>
           </div>
         </div>
-      </footer>
+        <div class="col-xl-3 p-4 col-lg-3 p-4 col-md-6 p-4 col-sm-12 p-4">
+          <div class="title footer-header">HUBUNGI KAMI</div>
+          <div class="line my-2"></div>
 
+          <strong class="footer-text">JokiSkuy Team</strong>
+
+          <p class="mb-1 footer-text">
+            Telkom University Surabaya, East Java, Indonesia
+          </p>
+          <p class="mb-1 footer-text">
+            <span class="font-weight-bold">Telp :</span> 08873433309
+          </p>
+          <p class="mb-2 footer-text">
+            <span class="font-weight-bold">Email :</span> JokiSkuy@gmail.com
+          </p>
+
+          <div>
+            <a href="#">
+              <i class="mx-2 ikon1 ion-ios-telephone"></i>
+            </a>
+            <a href="#">
+              <i class="mx-2 ikon1 ion-ios-email"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 p-4 col-lg-3 p-4 col-md-6 p-4 col-sm-12 p-4">
+          <div class="title footer-header">VIDEO TERKAIT</div>
+          <div class="line my-2"></div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/srkG0zqJZSw"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/layanan.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <script>
-        const viewImage = (url) => {
-            $('#imagePreview img')[0].setAttribute('src', url);
-            $('#imagePreview').addClass('active');
-        };
+      const viewImage = (url) => {
+        $('#imagePreview img')[0].setAttribute('src', url);
+        $('#imagePreview').addClass('active');
+      };
 
-        const closeImagePreview = () => {
-            $('#imagePreview').removeClass('active');
-        };
+      const closeImagePreview = () => {
+        $('#imagePreview').removeClass('active');
+      };
 
-        const setCategory = (category) => {
-            $('.section-3 .row .item').each((index, element) => {
-                console.log(element.getAttribute('data-category'), element);
+      const setCategory = (category) => {
+        $('.section-3 .row .item').each((index, element) => {
+          console.log(element.getAttribute('data-category'), element);
 
-                const itemCategory = element.getAttribute('data-category');
+          const itemCategory = element.getAttribute('data-category');
 
-                if (category === '1') {
-                    element.classList.remove('d-none');
-                } else {
-                    if (itemCategory !== category) {
-                        element.classList.add('d-none');
-                    } else {
-                        element.classList.remove('d-none');
-                    }
-                }
-            });
-
-            $('.section-3 .category .btn').removeClass('active');
-        };
-
-        $('.section-3 .category .btn').on('click', (e) => {
-            setCategory(e.target.value);
-            e.target.classList.add('active');
+          if (category === '1') {
+            element.classList.remove('d-none');
+          } else {
+            if (itemCategory !== category) {
+              element.classList.add('d-none');
+            } else {
+              element.classList.remove('d-none');
+            }
+          }
         });
+
+        $('.section-3 .category .btn').removeClass('active');
+      };
+
+      $('.section-3 .category .btn').on('click', (e) => {
+        setCategory(e.target.value);
+        e.target.classList.add('active');
+      });
     </script>
 
     <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
+      var acc = document.getElementsByClassName('accordion');
+      var i;
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                this.parentElement.classList.toggle("active");
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener('click', function () {
+          this.classList.toggle('active');
+          this.parentElement.classList.toggle('active');
 
-                var pannel = this.nextElementSibling;
+          var pannel = this.nextElementSibling;
 
-                if (pannel.style.display === "block") {
-                    pannel.style.display = "none";
-                } else {
-                    pannel.style.display = "block";
-                }
-            });
-        }
+          if (pannel.style.display === 'block') {
+            pannel.style.display = 'none';
+          } else {
+            pannel.style.display = 'block';
+          }
+        });
+      }
     </script>
 
     <!-- API Whatsapp -->
     <script>
-        document.getElementById("whatsappBtn").addEventListener("click", function () {
-            var phoneNumber = "628873433309"; // Ganti dengan nomor telepon tujuan
-            var message = "Halo, saya tertarik dengan layanan Anda. Silakan beri saya informasi lebih lanjut ."; // Pesan yang akan ditampilkan di obrolan WhatsApp
-            var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
-            window.open(url, "_blank");
+      document
+        .getElementById('whatsappBtn')
+        .addEventListener('click', function () {
+          var phoneNumber = '628873433309'; // Ganti dengan nomor telepon tujuan
+          var message =
+            'Halo, saya tertarik dengan layanan Anda. Silakan beri saya informasi lebih lanjut .'; // Pesan yang akan ditampilkan di obrolan WhatsApp
+          var url =
+            'https://api.whatsapp.com/send?phone=' +
+            phoneNumber +
+            '&text=' +
+            encodeURIComponent(message);
+          window.open(url, '_blank');
         });
-        document.getElementById("whatsappBtn1").addEventListener("click", function () {
-            var phoneNumber = "628873433309"; // Ganti dengan nomor telepon tujuan
-            var message = "Halo, saya tertarik dengan layanan Anda untuk Joki Skipsi / Tesis. Silakan beri saya informasi lebih lanjut."; ; // Pesan yang akan ditampilkan di obrolan WhatsApp
-            var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
-            window.open(url, "_blank");
+      document
+        .getElementById('whatsappBtn1')
+        .addEventListener('click', function () {
+          var phoneNumber = '628873433309'; // Ganti dengan nomor telepon tujuan
+          var message =
+            'Halo, saya tertarik dengan layanan Anda untuk Joki Skipsi / Tesis. Silakan beri saya informasi lebih lanjut.'; // Pesan yang akan ditampilkan di obrolan WhatsApp
+          var url =
+            'https://api.whatsapp.com/send?phone=' +
+            phoneNumber +
+            '&text=' +
+            encodeURIComponent(message);
+          window.open(url, '_blank');
         });
-        document.getElementById("whatsappBtn2").addEventListener("click", function () {
-            var phoneNumber = "628873433309"; // Ganti dengan nomor telepon tujuan
-            var message = "Halo, saya tertarik dengan promo-promo yang ditawarkan. Silakan beri saya informasi lebih lanjut."; // Pesan yang akan ditampilkan di obrolan WhatsApp
-            var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
-            window.open(url, "_blank");
+      document
+        .getElementById('whatsappBtn2')
+        .addEventListener('click', function () {
+          var phoneNumber = '628873433309'; // Ganti dengan nomor telepon tujuan
+          var message =
+            'Halo, saya tertarik dengan promo-promo yang ditawarkan. Silakan beri saya informasi lebih lanjut.'; // Pesan yang akan ditampilkan di obrolan WhatsApp
+          var url =
+            'https://api.whatsapp.com/send?phone=' +
+            phoneNumber +
+            '&text=' +
+            encodeURIComponent(message);
+          window.open(url, '_blank');
         });
-        document.getElementById("whatsappBtn3").addEventListener("click", function () {
-            var phoneNumber = "628873433309"; // Ganti dengan nomor telepon tujuan
-            var message = "Halo, saya memiliki tugas yang tidak tercantum dalam daftar. Bisakah Anda membantu saya dengan ini?";
-            var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
-            window.open(url, "_blank");
+      document
+        .getElementById('whatsappBtn3')
+        .addEventListener('click', function () {
+          var phoneNumber = '628873433309'; // Ganti dengan nomor telepon tujuan
+          var message =
+            'Halo, saya memiliki tugas yang tidak tercantum dalam daftar. Bisakah Anda membantu saya dengan ini?';
+          var url =
+            'https://api.whatsapp.com/send?phone=' +
+            phoneNumber +
+            '&text=' +
+            encodeURIComponent(message);
+          window.open(url, '_blank');
         });
     </script>
-</body>
-
+  </body>
 </html>

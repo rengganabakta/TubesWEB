@@ -155,20 +155,21 @@ hr {
   }
 }
 
-/* Untuk perangkat seluler (lebar layar hingga 576px) */
-@media only screen and (max-width: 576px) {
+/* Untuk perangkat seluler dengan lebar layar hingga 480px */
+@media only screen and (max-width: 480px) {
   .hero-text h1 {
-    font-size: 1.5em; /* Ukuran font lebih kecil untuk tampilan yang lebih kecil */
+    font-size: 1.2em; /* Ukuran font lebih kecil untuk tampilan yang lebih kecil */
   }
 
   /* Menyesuaikan padding untuk bagian "Cara Order" dan "Cara Bayar" */
   #caraOrder,
   #caraBayar {
-    padding: 15px;
+    padding: 10px;
   }
 
   /* Menyesuaikan margin untuk bagian "Cara Order" */
   #caraOrder {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
+
