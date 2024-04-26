@@ -43,20 +43,15 @@
       </div>
     </nav>
 
-    <div id="caraOrder" class="container">
+    <div id="caraOrder" class="container fade-in-left">
       <h2>How to Order</h2>
       <ol>
-        <li>Pilih jenis joki yang Anda inginkan</li>
+        <li>Klik tombol "Order Now" untuk mulai memesan layanan JOkiSkuy</li>
         <li>
-          Lengkapi formulir pemesanan dengan detail yang dibutuhkan, seperti
-          jenis game atau tugas, dan instruksi khusus jika ada.
+          Lengkapi formulir pemesanan dengan detail yang dibutuhkan dan instruksi khusus jika ada.
         </li>
         <li>
-          Kirimkan formulir pemesanan tersebut melalui tombol 'Pesan Sekarang'
-          atau cara yang tersedia di situs kami.
-        </li>
-        <li>
-          Tunggu konfirmasi dari tim kami melalui email atau pesan teks, yang
+          Tunggu konfirmasi dari tim kami yang
           akan berisi estimasi waktu penyelesaian dan rincian pembayaran.
         </li>
         <li>
@@ -64,17 +59,17 @@
           instruksi yang diberikan.
         </li>
         <li>
-          Setelah pembayaran berhasil diverifikasi, joki game atau tugas Anda
+          Setelah pembayaran berhasil diverifikasi, joki tugas Anda
           akan segera dimulai.
         </li>
       </ol>
       <p>
         Setelah langkah-langkah ini dilakukan, Anda akan menerima konfirmasi
-        pesanan melalui email atau pesan teks.
+        pesanan melalui WhatsApp.
       </p>
     </div>
 
-    <div id="caraBayar" class="container">
+    <div id="caraBayar" class="container fade-in-left">
       <h2>Payment Method</h2>
       <p>Kami menyediakan beberapa opsi pembayaran yang mudah dan aman:</p>
       <ol>
@@ -84,13 +79,13 @@
           sebagai referensi pembayaran.
         </li>
         <li>
-          <strong>Dompet Digital:</strong> Kami juga menerima pembayaran melalui
-          berbagai platform dompet digital yang populer.
+          <strong>E-Wallet:</strong> Kami juga menerima pembayaran melalui
+          berbagai platform E-Wallet yang tersedia.
         </li>
       </ol>
       <p>
         Setelah pembayaran Anda berhasil diproses, Anda akan menerima konfirmasi
-        pembayaran melalui email bersama dengan rincian pesanan Anda.
+        pembayaran melalui WhatsApp bersama dengan rincian pesanan Anda.
       </p>
     </div>
 
@@ -202,6 +197,37 @@
           setCategory(e.target.value);
           e.target.classList.add('active');
         });
+
+        // Fungsi untuk mengecek apakah elemen dalam viewport
+  function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+ // Fungsi untuk menambahkan/menghapus class pada scroll
+ function handleScroll() {
+    var caraOrderElement = document.getElementById("caraOrder");
+    var caraBayarElement = document.getElementById("caraBayar");
+    
+    if (isInViewport(caraOrderElement)) {
+      caraOrderElement.classList.add("show");
+    } else {
+      caraOrderElement.classList.remove("show");
+    }
+
+    if (isInViewport(caraBayarElement)) {
+      caraBayarElement.classList.add("show");
+    } else {
+      caraBayarElement.classList.remove("show");
+    }
+  }
+  // Event listener untuk mendeteksi scroll
+  window.addEventListener("scroll", handleScroll);
       </script>
   </body>
 </html>
