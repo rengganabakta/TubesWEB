@@ -1,15 +1,19 @@
-.hero-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.3)), url("/image/ORDER1.png");
+.header1 {
+  position: relative; /* Diperlukan agar posisi absolut pada gambar bekerja */
   height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
- background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateZ(0);
+}
+
+.header1 img {
+  position: absolute; /* Gambar diatur mutlak agar bisa tumpang tindih dengan hero-text */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan gambar terisi seluruh area header */
+  z-index: -1; /* Menempatkan gambar di bawah teks */
 }
 
 @keyframes fadeInDown {
@@ -21,6 +25,11 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.hero-text {
+  z-index: 1; /* Menempatkan teks di atas gambar */
+  text-align: center;
 }
 
 .hero-text h1 {
@@ -38,7 +47,12 @@ hr {
   width: 100%;
   border: 0;
   height: 3px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), limegreen, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    limegreen,
+    rgba(255, 255, 255, 0)
+  );
   animation: fadeInDown 1s ease-in-out;
 }
 
@@ -100,7 +114,6 @@ hr {
 }
 
 /* Desain tambahan untuk membuat bagian "Cara Order" dan "Cara Bayar" lebih menarik */
-
 
 #caraOrder h2,
 #caraBayar h2 {
@@ -172,4 +185,3 @@ hr {
     margin-top: 15px;
   }
 }
-
