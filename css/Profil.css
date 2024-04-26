@@ -7,7 +7,6 @@
 }
 
 .hero-image {
-    background-image: url(""); 
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -86,6 +85,7 @@ h2, .sejarah1 {
     width: 250px;
     height: auto;
     border-radius: 15%;
+    margin-bottom: 40px;
 }
 
 .Sejarah {
@@ -218,21 +218,20 @@ h2, .sejarah1 {
     #sejarah {
         margin-top: 60px;
         width: 230px;
-
     }
     
-    .JokiSkuy,.Sejarah {
+    .JokiSkuy, .Sejarah {
         font-size: 1rem; 
     }
     
     .col-3 {
-        flex: 0 0 44%;
-        max-width: 44%; 
+        flex: 0 0 33.33%;
+        max-width: 33.33%; 
     }
 
     .col-9 {
-        flex: 0 0 56%; 
-        max-width: 56%; 
+        flex: 0 0 66.66%; 
+        max-width: 66.66%; 
     }
 }
 
@@ -246,11 +245,24 @@ h2, .sejarah1 {
     }
 }
 
-@media (max-width: 767px) {
-    .hero-text h1 {
-        font-size: 30px;
+@media (max-width: 426px) {
+    #tentang, #sejarah {
+        margin-top: 180px;
+        width: 100%; 
+        height: auto; 
+        border-radius: 15px; 
+        object-fit: cover; 
     }
-    .hero-text p {
-        font-size: 16px;
+}
+
+@media (max-width: 426px) {
+    .col-3 {
+        flex: 0 0 41.66%; 
+        max-width: 41.66%; 
+    }
+
+    .col-9 {
+        flex: 0 0 58.33%; 
+        max-width: 58.33%;
     }
 }

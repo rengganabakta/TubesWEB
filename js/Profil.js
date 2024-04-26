@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function startAutoSlide() {
         if (window.innerWidth <= 1025) {
-            autoSlideInterval = setInterval(nextSlide, 2000);
+            autoSlideInterval = setInterval(nextSlide, 2500);
         }
     }
 
