@@ -42,7 +42,6 @@ h2, .sejarah1 {
     font-weight: bolder;
 }
 
-
 #tentang {
     width: 250px;
     height: auto;
@@ -81,6 +80,7 @@ h2, .sejarah1 {
 .slider-wrapper {
     overflow: hidden;
     position: relative;
+    display: flex;
 }
 
 .slider {
@@ -90,12 +90,13 @@ h2, .sejarah1 {
 
 .cards {
     display: flex;
+    justify-content: center; 
 }
 
 .card {
     min-width: 15rem;
     max-width: calc(100% - 40px);
-    margin: 20px;
+    margin: 20px 10px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease;
@@ -103,9 +104,17 @@ h2, .sejarah1 {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
+}
+
+.card img {
+    width: 300px;
+    height: auto;
+}
+
+.card .card-title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    margin: 0;
 }
 
 .card-body{
@@ -116,17 +125,6 @@ h2, .sejarah1 {
     transform: scale(1.05);
 }
 
-.card img {
-    border-radius: 10px 10px 0 0;
-    width: 100%;
-    height: auto;
-}
-
-.card .card-title {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    margin: 0;
-}
 
 .controls {
     text-align: center;
@@ -180,11 +178,6 @@ h2, .sejarah1 {
 }
 
 @media (max-width: 1025px) {
-    .cards-wrapper {
-        overflow-x: auto;
-        justify-content: flex-start;
-    }
-
     #tentang {
         margin-top: 50px;
         width: 230px;
@@ -215,5 +208,8 @@ h2, .sejarah1 {
     .controls {
         display: none;
     }
-}
 
+    .slider-wrapper {
+        justify-content: center; /* Tengahkan slider */
+    }
+}
