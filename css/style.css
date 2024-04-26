@@ -193,8 +193,8 @@
 }
 
 .tentang-image {
-  width: 540px;
-  height: 380px;
+  width: 100%;
+  height: auto;
   border-radius: 15px;
   align-items: left;
 }
