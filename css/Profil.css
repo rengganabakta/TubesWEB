@@ -245,12 +245,3 @@ h2, .sejarah1 {
         justify-content: center;
     }
 }
-
-@media (max-width: 767px) {
-    .hero-text h1 {
-        font-size: 30px;
-    }
-    .hero-text p {
-        font-size: 16px;
-    }
-}
