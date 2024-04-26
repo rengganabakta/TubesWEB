@@ -27,7 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function startAutoSlide() {
-        autoSlideInterval = setInterval(nextSlide, 5000);
+        if (window.matchMedia("(min-width: 1025px)").matches) { // Check if screen width is 1025px or more
+            autoSlideInterval = setInterval(nextSlide, 5000);
+        }
     }
 
     function stopAutoSlide() {

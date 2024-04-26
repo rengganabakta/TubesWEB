@@ -60,6 +60,7 @@ body {
 
 .nav-link.active {
   text-shadow: 0px 0px 10px limegreen;
+  background-color: transparent;
 }
 
 .navbar-brand {
@@ -213,6 +214,7 @@ body {
   background-color: #f8f9fa;
   padding: 30px;
   border-radius: 10px;
+  height: 350px;
   margin-bottom: 20px;
 }
 
@@ -276,12 +278,12 @@ footer .btn.submit {
 }
 
 /* Tablet */
-@media (max-width: 998px) {
+@media (max-width: 768px) {
   /* Slide Show */
 
   .carousel img {
     width: 100%;
-    height: 70vh;
+    height: 55vh;
     object-fit: cover;
   }
 
@@ -304,8 +306,18 @@ footer .btn.submit {
   }
 
   .home-konten {
-    padding: 50px; /* Mengurangi padding pada tablet */
-    margin-left: 50px; /* Mengurangi margin kiri pada tablet */
+    padding: 50px;
+    margin-left: 50px;
+  }
+
+  .card-body {
+    margin-bottom: 45px;
+    text-align: left;
+  }
+
+  .card-body-2 {
+    margin-bottom: 45px;
+    text-align: right;
   }
 
   /* Kenapa Harus */
@@ -315,32 +327,39 @@ footer .btn.submit {
     border-radius: 0.25rem;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     padding: 1rem;
-    height: 280px;
+    height: 200px;
     background-color: #fff;
   }
 
   .cara-order img {
-    width: 100%; /* Mengatur gambar cara order agar responsif pada tablet */
+    width: 100%;
     height: auto;
-    border-radius: 0; /* Menghapus border-radius pada tablet */
-  }
-}
-
-/* Ponsel */
-@media (max-width: 576px) {
-  .home-konten {
-    padding: 30px; /* Mengurangi padding pada ponsel */
-    margin-left: 20px; /* Mengurangi margin kiri pada ponsel */
-    margin-right: 20px; /* Mengurangi margin kanan pada ponsel */
+    border-radius: 0;
   }
 
-  .carousel img {
-    height: 50vh; /* Mengurangi tinggi gambar carousel pada ponsel */
+  .font-header-joki1 {
+    font-weight: 700;
+    color: #2eaf7d;
+    font-size: 24px;
   }
 
-  .cara-order img {
-    width: 100%; /* Mengatur gambar cara order agar responsif pada ponsel */
-    height: auto;
-    border-radius: 0; /* Menghapus border-radius pada ponsel */
+  .font-header-joki2 {
+    font-weight: 700;
+    color: #000;
+    font-size: 24px;
+  }
+
+  .text-deskripsi {
+    font-size: 16px;
+  }
+
+  /* Testimoni */
+
+  .testimonial {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    height: 380px;
+    margin-bottom: 20px;
   }
 }
