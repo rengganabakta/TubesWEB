@@ -46,12 +46,18 @@ hr {
 
 #caraOrder,
 #caraBayar {
-  background-color: #000000;
+  background-color: #f9f9f9;
   border-radius: 10px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3); /* Menyesuaikan bayangan kotak */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Aturan standar */
   padding: 30px;
   margin-bottom: 30px;
 }
+
+#caraOrder {
+  margin-top: 30px; /* Atur jarak antara caraOrder dan hero-container */
+}
+
+
 #caraOrder h2 {
   color: limegreen;
   font-weight: 700;
@@ -96,14 +102,6 @@ hr {
 
 /* Desain tambahan untuk membuat bagian "Cara Order" dan "Cara Bayar" lebih menarik */
 
-#caraOrder,
-#caraBayar {
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  margin-bottom: 30px;
-}
 
 #caraOrder h2,
 #caraBayar h2 {
