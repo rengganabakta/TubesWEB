@@ -141,3 +141,34 @@ hr {
   opacity: 1;
   transform: translateX(0);
 }
+
+/* Untuk tablet (lebar layar hingga 768px) */
+@media only screen and (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2em; /* Mengurangi ukuran font untuk tampilan yang lebih kecil */
+  }
+
+  /* Menyesuaikan padding untuk bagian "Cara Order" dan "Cara Bayar" */
+  #caraOrder,
+  #caraBayar {
+    padding: 20px;
+  }
+}
+
+/* Untuk perangkat seluler (lebar layar hingga 576px) */
+@media only screen and (max-width: 576px) {
+  .hero-text h1 {
+    font-size: 1.5em; /* Ukuran font lebih kecil untuk tampilan yang lebih kecil */
+  }
+
+  /* Menyesuaikan padding untuk bagian "Cara Order" dan "Cara Bayar" */
+  #caraOrder,
+  #caraBayar {
+    padding: 15px;
+  }
+
+  /* Menyesuaikan margin untuk bagian "Cara Order" */
+  #caraOrder {
+    margin-top: 20px;
+  }
+}
