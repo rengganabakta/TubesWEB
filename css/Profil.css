@@ -1,18 +1,21 @@
-body {
-    color: black;
-    background-color: white;
+.navbar .navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    transition: 250ms;
+    color: #ffffff !important;
+    margin-right: 10px;
 }
 
 .hero-image {
-    background-image: url(""); /* Ganti dengan path gambar Anda */
+    background-image: url(""); 
     background-size: cover;
     background-position: center;
-    height: 400px; /* Sesuaikan tinggi hero section sesuai kebutuhan Anda */
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white; /* Warna teks */
+    color: white; 
 }
 
 h1{
@@ -25,12 +28,12 @@ h1{
 }
 
 .hero-text h1 {
-    font-size: 50px; /* Ukuran font judul utama */
+    font-size: 50px;
 }
 
 .hero-text p {
-    font-size: 24px; /* Ukuran font deskripsi */
-    margin-bottom: 20px; /* Jarak antara judul dan deskripsi */
+    font-size: 24px;
+    margin-bottom: 20px; 
 }
 
 .order-btn {
@@ -240,6 +243,15 @@ h2, .sejarah1 {
     }
 
     .slider-wrapper {
-        justify-content: center; /* Tengahkan slider */
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-text h1 {
+        font-size: 30px;
+    }
+    .hero-text p {
+        font-size: 16px;
     }
 }

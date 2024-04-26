@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/ionicons.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      #scrollToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #555;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 100px;
+      }
+
+      #scrollToTopBtn:hover {
+        background-color: #777;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -270,7 +292,7 @@
           <a href="caraorder.html" class="btn btn-success order"
             >Lihat Cara Order Lebih Detail</a
           >
-          <a href="layanan.html" class="btn btn-success order"
+          <a href="layanan.html" class="btn btn-success order small-br"
             >Jokiin Tugasku</a
           >
         </div>
@@ -421,6 +443,15 @@
       </div>
     </footer>
 
+    <button
+      onclick="scrollToTop()"
+      id="scrollToTopBtn"
+      title="Go to top"
+      style="display: none"
+    >
+      <i class="ion-arrow-up-a"></i>
+    </button>
+
     <!-- Script JS -->
 
     <script src="js/jquery.min.js"></script>
@@ -461,25 +492,48 @@
         e.target.classList.add('active');
       });
 
-      // Ambil elemen-elemen yang diperlukan
       const previewTrigger = document.getElementById('preview-trigger');
       const overlay = document.getElementById('overlay');
       const previewImage = document.getElementById('preview-image');
       const closeBtn = document.getElementById('close-btn');
 
-      // Tambahkan event listener saat previewTrigger diklik
       previewTrigger.addEventListener('click', function (e) {
-        e.preventDefault(); // Mencegah perilaku default dari link
+        e.preventDefault();
 
-        const imgSrc = this.querySelector('img').getAttribute('src'); // Ambil sumber gambar
-        previewImage.setAttribute('src', imgSrc); // Set sumber gambar pada preview
-        overlay.style.display = 'block'; // Tampilkan overlay
+        const imgSrc = this.querySelector('img').getAttribute('src');
+        previewImage.setAttribute('src', imgSrc);
+        overlay.style.display = 'block';
       });
 
-      // Tambahkan event listener saat closeBtn diklik
       closeBtn.addEventListener('click', function () {
-        overlay.style.display = 'none'; // Sembunyikan overlay saat tombol close diklik
+        overlay.style.display = 'none';
       });
+
+      function scrollToTop() {
+        const scrollStep = -window.scrollY / (500 / 15);
+        const scrollInterval = setInterval(function () {
+          if (window.scrollY !== 0) {
+            window.scrollBy(0, scrollStep);
+          } else {
+            clearInterval(scrollInterval);
+          }
+        }, 15);
+      }
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById('scrollToTopBtn').style.display = 'block';
+        } else {
+          document.getElementById('scrollToTopBtn').style.display = 'none';
+        }
+      }
     </script>
   </body>
 </html>
