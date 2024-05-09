@@ -1,3 +1,47 @@
+.navbar {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    border-left: 2px solid limegreen !important;
+    padding-left: 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    transition: 250ms;
+    color: #ffffff !important;
+    margin-right: 10px;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover {
+    color: limegreen !important;
+}
+
+.nav-link.active {
+    text-shadow: 0px 0px 10px limegreen;
+    background-color: transparent;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    background-color: limegreen;
+}
+
+.order {
+    font-weight: 500;
+    width: auto;
+    border-radius: 10px;
+}
+
 .wrapper {
     max-width: 80%;
     margin: auto;
@@ -55,6 +99,7 @@
     justify-content: center;
     align-items: center;
 }
+
 #border2 {
     padding: 20px;
     max-width: 80%;
@@ -82,14 +127,15 @@
     #border {
         margin-left: auto;
     }
-    #imgPromo{
+
+    #imgPromo {
         width: 80% !important;
     }
-    
+
 }
 
-@media (max-width: 1200px){
-    #imgPromo{
+@media (max-width: 1200px) {
+    #imgPromo {
         width: 100%;
     }
 }
@@ -124,6 +170,7 @@
     flex-direction: column;
     justify-content: center;
 }
+
 .card-body {
     margin-bottom: 0;
 }
@@ -173,27 +220,33 @@
     }
 
     .col-3 {
-        flex: 0 0 44%; /* 5/12 * 100% */
-        max-width: 44%; /* Batasi lebar maksimal */
+        flex: 0 0 44%;
+        /* 5/12 * 100% */
+        max-width: 44%;
+        /* Batasi lebar maksimal */
     }
 
     /* Sesuaikan lebar konten */
     .col-9 {
-        flex: 0 0 56%; /* 7/12 * 100% */
-        max-width: 56%; /* Batasi lebar maksimal */
+        flex: 0 0 56%;
+        /* 7/12 * 100% */
+        max-width: 56%;
+        /* Batasi lebar maksimal */
     }
 }
+
 @media (min-width: 780px) {
     .slider-wrapper {
         overflow: hidden;
     }
-    
-    
+
+
 }
 
 @media (max-width: 779px) {
     .slider {
-        width: 100%; /* Atur kembali lebar ke 100% untuk tampilan seluler */
+        width: 100%;
+        /* Atur kembali lebar ke 100% untuk tampilan seluler */
     }
 }
 
